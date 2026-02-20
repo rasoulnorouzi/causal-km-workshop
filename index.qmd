@@ -1,0 +1,92 @@
+---
+title: "Text Mining Systematic Reviews"
+subtitle: "Pre-Conference Workshop · September 30, 2026 · Tilburg, Netherlands"
+author: "Rasoul Norouzi"
+page-layout: full
+---
+
+::: {.hero-wrap}
+## Build transparent evidence maps from scientific literature
+
+This full-day workshop teaches a deterministic, non-generative LLM pipeline for systematic reviews. Participants move from bulk paper retrieval to causal relation extraction, then build a nomological knowledge graph from published claims.
+
+[Read Full Proposal](proposal-details.qmd){.btn .btn-primary .me-2}
+[Future Materials](materials.qmd){.btn .btn-outline-light}
+:::
+
+::: {.facts-grid}
+::: {.fact-card}
+### Date
+**September 30, 2026**
+:::
+
+::: {.fact-card}
+### Format
+**Full-day, in-person workshop**
+:::
+
+::: {.fact-card}
+### Location
+**Tilburg, Netherlands**
+:::
+
+::: {.fact-card}
+### Audience
+**PhD students and researchers (social sciences)**
+:::
+:::
+
+## Why this workshop
+
+- Deterministic, evidence-based pipeline with no generative AI.
+- End-to-end workflow from APIs and PDFs to extractable sentence datasets.
+- Structured causal extraction using `rasoultilburg/SocioCausaNet`.
+- Reproducible outputs suitable for theory-building and systematic reviews.
+
+## Learning outcomes
+
+By the end of the workshop, participants will be able to:
+
+- Retrieve papers in bulk via public APIs (Semantic Scholar, PubMed, CrossRef).
+- Convert PDFs to clean text and handle common extraction artifacts.
+- Prepare sentence-level corpora using light NLP preprocessing.
+- Apply transformer tooling for deterministic sentence analysis.
+- Extract and harmonize causal claims into a nomological map.
+
+## Curriculum at a glance
+
+| Module | Focus | Output |
+|---|---|---|
+| 1. Bulk Paper Retrieval via API | API keys, search features, bulk download | Local paper corpus + metadata |
+| 2. PDF to Text Conversion | Tool comparison, extraction, cleaning | Plain-text corpus |
+| 3. Sentence Extraction & Preprocessing | Segmentation and artifact handling | Sentence dataset for model inference |
+| 4. Introduction to HuggingFace | Model cards, sentence vs token tasks, pipeline API | Runnable inference notebook |
+| 5. Causal Extraction & Knowledge Graph | SocioCausaNet inference, harmonization, graph build | Queryable nomological map |
+
+## Organization
+
+::: {.columns}
+::: {.column width="55%"}
+### Organizer
+
+**Rasoul Norouzi**  
+Department of Methodology and Statistics  
+Tilburg University  
+`r.norouzi@tilburguniversity.edu`
+:::
+
+::: {.column width="45%"}
+### Collaboration
+
+- Netherlands eScience Center
+- Open Science Community Tilburg
+:::
+:::
+
+## Publish-ready structure
+
+This site is set up for expansion. Use separate pages for slides, notebooks, datasets, and readings as they are released.
+
+- `index.qmd`: workshop landing page
+- `proposal-details.qmd`: full proposal text
+- `materials.qmd`: publication hub for workshop materials

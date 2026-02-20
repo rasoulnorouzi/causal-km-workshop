@@ -1,0 +1,31 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - proposal-details.qmd
+    - materials.qmd
+
+website:
+  title: "Text Mining Workshop"
+  page-navigation: true
+  navbar:
+    pinned: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Full Proposal
+        href: proposal-details.qmd
+      - text: Materials
+        href: materials.qmd
+  page-footer:
+    left: "Text Mining Systematic Reviews Workshop"
+    right: "Tilburg University"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    smooth-scroll: true
