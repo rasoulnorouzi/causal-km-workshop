@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop Materials – Text Mining Workshop</title>
+<title>Workshop Materials – Text Mining Systematic Reviews</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,10 +20,46 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -36,10 +72,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5651ea6f4df771a04990fa4f684d8bdf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-40471c3da53007c7b4109b0ee53fafc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +106,9 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Workshop Materials – Text Mining Systematic Reviews">
+<meta property="og:description" content="A pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction. September 30, 2026 · Tilburg, Netherlands.">
+<meta property="og:site_name" content="Text Mining Systematic Reviews">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -79,11 +117,6 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Text Mining Workshop</span>
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -95,12 +128,23 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./proposal-details.qmd"> 
-<span class="menu-text">Full Proposal</span></a>
+    <a class="nav-link" href="./schedule.html"> 
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./materials.html" aria-current="page"> 
 <span class="menu-text">Materials</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rasoulnorouzi/causal-km-workshop"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -117,11 +161,15 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#planned-releases" id="toc-planned-releases" class="nav-link active" data-scroll-target="#planned-releases">Planned releases</a></li>
-  <li><a href="#suggested-page-expansion" id="toc-suggested-page-expansion" class="nav-link" data-scroll-target="#suggested-page-expansion">Suggested page expansion</a></li>
+  <ul class="collapse">
+  <li><a href="#notebooks" id="toc-notebooks" class="nav-link active" data-scroll-target="#notebooks">Notebooks</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#data-and-model" id="toc-data-and-model" class="nav-link" data-scroll-target="#data-and-model">Data and Model</a></li>
+  <li><a href="#module-overview" id="toc-module-overview" class="nav-link" data-scroll-target="#module-overview">Module Overview</a></li>
+  <li><a href="#requirements-file" id="toc-requirements-file" class="nav-link" data-scroll-target="#requirements-file">Requirements File</a></li>
+  <li><a href="#useful-links" id="toc-useful-links" class="nav-link" data-scroll-target="#useful-links">Useful Links</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/rasoulnorouzi/causal-km-workshop/edit/main/materials.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rasoulnorouzi/causal-km-workshop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -129,7 +177,6 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Workshop Materials</h1>
-<p class="subtitle lead">Release hub for notebooks, slides, and datasets</p>
 </div>
 
 
@@ -146,61 +193,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Materials will be published here after preparation and quality checks.</p>
-<section id="planned-releases" class="level2">
-<h2 class="anchored" data-anchor-id="planned-releases">Planned releases</h2>
+<section id="notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="notebooks">Notebooks</h2>
+<p>Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>Item</th>
+<th>Module</th>
+<th>Topic</th>
 <th>Status</th>
-<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Slides (all modules)</td>
-<td>Planned</td>
-<td>PDF and source files</td>
+<td>1</td>
+<td>Bulk Paper Retrieval</td>
+<td>[FILL — add link after workshop]</td>
 </tr>
 <tr class="even">
-<td>Notebooks</td>
-<td>Planned</td>
-<td>One notebook per module</td>
+<td>2</td>
+<td>PDF to Text</td>
+<td>[FILL — add link after workshop]</td>
 </tr>
 <tr class="odd">
-<td>Demo dataset</td>
-<td>Planned</td>
-<td>Sample corpus for exercises</td>
+<td>3</td>
+<td>Sentence Extraction</td>
+<td>[FILL — add link after workshop]</td>
 </tr>
 <tr class="even">
-<td>Reproducibility checklist</td>
-<td>Planned</td>
-<td>Environment and dependency lock</td>
+<td>4</td>
+<td>HuggingFace Intro</td>
+<td>[FILL — add link after workshop]</td>
 </tr>
 <tr class="odd">
-<td>Suggested reading pack</td>
-<td>Planned</td>
-<td>Curated papers and docs</td>
+<td>5</td>
+<td>Causal Knowledge Graph</td>
+<td>[FILL — add link after workshop]</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="suggested-page-expansion" class="level2">
-<h2 class="anchored" data-anchor-id="suggested-page-expansion">Suggested page expansion</h2>
-<p>As materials grow, split this section into additional pages:</p>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>Slides will be posted after the workshop in PDF format.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Module</th>
+<th>Slides</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 — Bulk Paper Retrieval</td>
+<td>[FILL — add link after workshop]</td>
+</tr>
+<tr class="even">
+<td>2 — PDF to Text</td>
+<td>[FILL — add link after workshop]</td>
+</tr>
+<tr class="odd">
+<td>3 — Sentence Extraction</td>
+<td>[FILL — add link after workshop]</td>
+</tr>
+<tr class="even">
+<td>4 — HuggingFace Intro</td>
+<td>[FILL — add link after workshop]</td>
+</tr>
+<tr class="odd">
+<td>5 — Causal Knowledge Graph</td>
+<td>[FILL — add link after workshop]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-and-model" class="level2">
+<h2 class="anchored" data-anchor-id="data-and-model">Data and Model</h2>
 <ul>
-<li><code>materials/slides.qmd</code></li>
-<li><code>materials/notebooks.qmd</code></li>
-<li><code>materials/data.qmd</code></li>
-<li><code>materials/references.qmd</code></li>
+<li><strong>SocioCausaNet on HuggingFace:</strong> <a href="https://huggingface.co/rasoultilburg/SocioCausaNet">rasoultilburg/SocioCausaNet</a></li>
+<li><strong>Sample paper corpus:</strong> [FILL — add link after workshop]</li>
+<li><strong>Example output graph:</strong> [FILL — add link after workshop]</li>
 </ul>
-<p>Then add them to <code>_quarto.yml</code> navigation.</p>
+</section>
+<section id="module-overview" class="level2">
+<h2 class="anchored" data-anchor-id="module-overview">Module Overview</h2>
+<p>For a complete overview of what each module covers, see the <a href="./schedule.html">full Schedule</a> page which includes detailed topics and code examples for each module.</p>
+</section>
+<section id="requirements-file" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-file">Requirements File</h2>
+<p>Copy the block below into a <code>requirements.txt</code> file and run <code>pip install -r requirements.txt</code> to install everything you need.</p>
+<pre><code>requests
+pandas
+tqdm
+PyMuPDF
+pdfminer.six
+pdfplumber
+spacy
+transformers
+sentence-transformers
+torch
+networkx
+pyvis
+matplotlib
+jupyter
+ipykernel</code></pre>
+<p>After installing, download the spaCy English model:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> spacy download en_core_web_sm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="useful-links" class="level2">
+<h2 class="anchored" data-anchor-id="useful-links">Useful Links</h2>
+<ul>
+<li><a href="https://huggingface.co">HuggingFace Hub</a></li>
+<li><a href="https://github.com/%5BFILL%5D">eScience Center download package</a></li>
+<li><a href="https://spacy.io">spaCy documentation</a></li>
+<li><a href="https://networkx.org">NetworkX documentation</a></li>
+<li><a href="https://github.com/rasoultilburg/sociocausanet-workshop">Workshop repository</a></li>
+</ul>
 
 
 </section>
@@ -279,7 +387,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/rasoulnorouzi\.github\.io\/causal-km-workshop");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -610,14 +718,21 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Text Mining Systematic Reviews Workshop</p>
+<p>Rasoul Norouzi · Tilburg University · 2026</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/rasoulnorouzi/causal-km-workshop/edit/main/materials.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/rasoulnorouzi/causal-km-workshop/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
-<p>Tilburg University</p>
-</div>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rasoulnorouzi/causal-km-workshop">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 
