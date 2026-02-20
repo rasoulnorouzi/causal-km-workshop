@@ -5,8 +5,8 @@ project:
 website:
   title: "Text Mining Systematic Reviews"
   description: "A pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction. September 30, 2026 · Tilburg, Netherlands."
-  site-url: https://rasoultilburg.github.io/sociocausanet-workshop
-  repo-url: https://github.com/rasoultilburg/sociocausanet-workshop
+  site-url: https://rasoulnorouzi.github.io/causal-km-workshop
+  repo-url: https://github.com/rasoulnorouzi/causal-km-workshop
   repo-actions: [edit, issue]
   open-graph: true
 
@@ -25,7 +25,7 @@ website:
         href: about.qmd
     right:
       - icon: github
-        href: https://github.com/rasoultilburg/sociocausanet-workshop
+        href: https://github.com/rasoulnorouzi/causal-km-workshop
         aria-label: GitHub
 
   sidebar: false
@@ -34,7 +34,7 @@ website:
     left: "Rasoul Norouzi · Tilburg University · 2026"
     right:
       - icon: github
-        href: https://github.com/rasoultilburg/sociocausanet-workshop
+        href: https://github.com/rasoulnorouzi/causal-km-workshop
 
   cookie-consent: false
 
