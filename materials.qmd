@@ -1,25 +1,76 @@
 ---
 title: "Workshop Materials"
-subtitle: "Release hub for notebooks, slides, and datasets"
+toc: true
 ---
 
-Materials will be published here after preparation and quality checks.
+## Notebooks
 
-## Planned releases
+Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.
 
-| Item | Status | Notes |
-|---|---|---|
-| Slides (all modules) | Planned | PDF and source files |
-| Notebooks | Planned | One notebook per module |
-| Demo dataset | Planned | Sample corpus for exercises |
-| Reproducibility checklist | Planned | Environment and dependency lock |
-| Suggested reading pack | Planned | Curated papers and docs |
+| Module | Topic | Status |
+|--------|-------|--------|
+| 1 | Bulk Paper Retrieval | [FILL — add link after workshop] |
+| 2 | PDF to Text | [FILL — add link after workshop] |
+| 3 | Sentence Extraction | [FILL — add link after workshop] |
+| 4 | HuggingFace Intro | [FILL — add link after workshop] |
+| 5 | Causal Knowledge Graph | [FILL — add link after workshop] |
 
-## Suggested page expansion
+## Slides
 
-As materials grow, split this section into additional pages:
+Slides will be posted after the workshop in PDF format.
 
-- `materials/slides.qmd`
-- `materials/notebooks.qmd`
-- `materials/data.qmd`
-- `materials/references.qmd`
+| Module | Slides |
+|--------|--------|
+| 1 — Bulk Paper Retrieval | [FILL — add link after workshop] |
+| 2 — PDF to Text | [FILL — add link after workshop] |
+| 3 — Sentence Extraction | [FILL — add link after workshop] |
+| 4 — HuggingFace Intro | [FILL — add link after workshop] |
+| 5 — Causal Knowledge Graph | [FILL — add link after workshop] |
+
+## Data and Model
+
+- **SocioCausaNet on HuggingFace:**
+  [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet)
+- **Sample paper corpus:** [FILL — add link after workshop]
+- **Example output graph:** [FILL — add link after workshop]
+
+## Module Overview
+
+For a complete overview of what each module covers, see the [full Schedule](schedule.qmd) page which includes detailed topics and code examples for each module.
+
+## Requirements File
+
+Copy the block below into a `requirements.txt` file and run
+`pip install -r requirements.txt` to install everything you need.
+
+```
+requests
+pandas
+tqdm
+PyMuPDF
+pdfminer.six
+pdfplumber
+spacy
+transformers
+sentence-transformers
+torch
+networkx
+pyvis
+matplotlib
+jupyter
+ipykernel
+```
+
+After installing, download the spaCy English model:
+
+```bash
+python -m spacy download en_core_web_sm
+```
+
+## Useful Links
+
+- [HuggingFace Hub](https://huggingface.co)
+- [eScience Center download package](https://github.com/[FILL])
+- [spaCy documentation](https://spacy.io)
+- [NetworkX documentation](https://networkx.org)
+- [Workshop repository](https://github.com/rasoultilburg/sociocausanet-workshop)

@@ -1,0 +1,63 @@
+---
+title: "About This Workshop"
+toc: false
+---
+
+## Instructor
+
+**Rasoul Norouzi**
+Department of Methodology and Statistics, Tilburg University
+
+Rasoul's research focuses on computational methods for systematic review,
+causal knowledge extraction from scientific text, and the application of
+NLP in social science research. He developed the SocioCausaNet model,
+which is at the heart of this workshop.
+
+[FILL — add short bio paragraph here]
+
+📧 [r.norouzi@tilburguniversity.edu](mailto:r.norouzi@tilburguniversity.edu)
+🐦 [FILL — add Twitter/X handle if applicable]
+🔗 [FILL — add personal/lab website if applicable]
+
+---
+
+## Organized In Collaboration With
+
+### Netherlands eScience Center
+
+The eScience Center is the Dutch national center for the development and
+application of research software. They developed the bulk paper download
+package used in Module 1 of this workshop.
+
+[https://www.esciencecenter.nl](https://www.esciencecenter.nl)
+
+### Open Science Community Tilburg
+
+The Open Science Community Tilburg is a network of researchers at Tilburg
+University committed to open and reproducible research practices.
+
+[FILL — add OSCT link]
+
+---
+
+## About the Workshop
+
+This workshop is a pre-conference event on **September 30, 2026** in
+Tilburg, Netherlands. It was designed to give social science researchers
+practical, hands-on experience with a reproducible text mining pipeline
+that requires no background in machine learning.
+
+The full pipeline — from downloading papers to a visual causal knowledge
+graph — uses only deterministic, evidence-based models. Every result the
+pipeline produces can be traced back to an exact sentence in an exact paper.
+
+---
+
+## Citing This Workshop
+
+If you use materials from this workshop in your own work, please cite:
+
+```
+Norouzi, R. (2026). Text Mining Systematic Reviews: A Pre-Conference
+Workshop. Tilburg University. https://rasoultilburg.github.io/sociocausanet-workshop
+```

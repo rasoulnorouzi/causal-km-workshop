@@ -1,0 +1,216 @@
+---
+title: "Workshop Schedule"
+subtitle: "September 30, 2026 · Tilburg University"
+toc: true
+---
+
+All times are approximate and may shift slightly on the day.
+
+<table class="schedule-table">
+<thead>
+<tr>
+  <th>Time</th>
+  <th>Module</th>
+  <th>Topics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Welcome and Setup</strong></td>
+  <td>Introductions, environment check, repo clone, install dependencies</td>
+</tr>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Module 1</strong> — Bulk Paper Retrieval</td>
+  <td>API keys, eScience Center download package, running your first bulk download</td>
+</tr>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Module 2</strong> — PDF to Text</td>
+  <td>Tool tour (PyMuPDF, pdfminer, GROBID), extraction, basic cleaning</td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">[FILL]</td>
+  <td colspan="2">☕ Coffee Break</td>
+</tr>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Module 3</strong> — Sentence Extraction</td>
+  <td>Sentence segmentation with spaCy, preprocessing for model input</td>
+</tr>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Module 4</strong> — HuggingFace Intro</td>
+  <td>Navigating the Hub, model cards, sentence vs. token models, pipeline API</td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">[FILL]</td>
+  <td colspan="2">🍽️ Lunch Break</td>
+</tr>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Module 5</strong> — Causal Extraction and Knowledge Graph</td>
+  <td>SocioCausaNet inference, harmonizing constructs, graph construction, querying the nomological map</td>
+</tr>
+<tr>
+  <td class="time-col">[FILL]</td>
+  <td><strong>Wrap-up and Q&A</strong></td>
+  <td>Open questions, next steps, how to apply this to your own research</td>
+</tr>
+</tbody>
+</table>
+
+## Module Details
+
+### Module 1: Bulk Paper Retrieval via API
+
+**What you'll have:** A working API setup and a folder of downloaded papers with metadata.
+
+- Setting up API keys and configuring your environment
+- Introduction to the eScience Center bulk download package
+- Exploring features: search filters, metadata retrieval, download options
+- Running your first bulk download and organizing the output
+
+```python
+from [FILL] import download_papers
+
+results = download_papers(
+    query="stress workplace wellbeing",
+    max_results=100,
+    output_dir="./papers"
+)
+```
+
+---
+
+### Module 2: PDF to Text Conversion
+
+**What you'll have:** Plain text files extracted from your PDFs, cleaned and ready for sentence segmentation.
+
+- Guided tour of PDF-to-text tools: PyMuPDF (fitz), pdfminer.six, pdfplumber, GROBID
+- What each tool handles well and where each one struggles
+- Running extraction on your downloaded corpus
+- Basic cleaning: removing headers, footers, reference sections, broken line breaks
+
+```python
+import fitz  # PyMuPDF
+
+def extract_text(pdf_path):
+    doc = fitz.open(pdf_path)
+    text = ""
+    for page in doc:
+        text += page.get_text()
+    return text
+```
+
+---
+
+### Module 3: Sentence Extraction and Preprocessing
+
+**What you'll have:** A clean list of sentences extracted from your paper corpus, ready to feed into SocioCausaNet.
+
+- Why sentence segmentation matters for causal extraction
+- Using spaCy to split paper text into sentences reliably
+- Handling tricky cases: abbreviations, inline citations, broken sentences from PDF extraction
+- Light preprocessing: stripping noise, normalizing whitespace, filtering short/long sentences
+
+```python
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+
+def extract_sentences(text):
+    doc = nlp(text)
+    sentences = [
+        sent.text.strip()
+        for sent in doc.sents
+        if len(sent.text.strip()) > 30
+    ]
+    return sentences
+```
+
+---
+
+### Module 4: Introduction to HuggingFace
+
+**What you'll have:** A working inference call on SocioCausaNet using the pipeline API.
+
+- Navigating the HuggingFace Hub: searching, filtering by task, reading model cards
+- What "text classification" and "token classification" mean in practice
+- Sentence-level models: what they produce and when they are useful
+- Token-level models: how they label text word by word
+- Using the pipeline API to run a model in a few lines of code
+
+```python
+from transformers import pipeline
+
+model = pipeline(
+    "text-classification",
+    model="rasoultilburg/SocioCausaNet"
+)
+
+sentence = "Increased workload leads to higher levels of burnout."
+result = model(sentence)
+print(result)
+```
+
+---
+
+### Module 5: Causal Extraction and Knowledge Graph
+
+**What you'll have:** A visual causal knowledge graph built entirely from published scientific claims in your corpus.
+
+- Running rasoultilburg/SocioCausaNet on your sentence dataset
+- Understanding the output: causal label, cause span, effect span
+- Harmonizing social science constructs: grouping synonymous terms into shared nodes
+- Building the knowledge graph: concepts as nodes, causal relations as directed edges
+- Adding provenance: linking each edge back to the source paper and sentence
+- Graphical presentation and visualization
+- Querying the graph: influential constructs, causal chains, research gaps
+
+```python
+from transformers import pipeline
+import networkx as nx
+
+causal_model = pipeline(
+    "token-classification",
+    model="rasoultilburg/SocioCausaNet",
+    aggregation_strategy="simple"
+)
+
+G = nx.DiGraph()
+
+for cause, effect, source_sentence in relations:
+    G.add_edge(cause, effect, sentence=source_sentence)
+
+# Query: what does 'stress' cause?
+print(list(G.successors("stress")))
+```
+
+---
+
+## Preparation Before the Workshop
+
+Please do the following **before arriving** so we can start on time:
+
+::: {.callout-important}
+## Required setup
+
+1. Clone the workshop repository:
+   ```bash
+   git clone https://github.com/rasoultilburg/sociocausanet-workshop.git
+   ```
+2. Create a virtual environment and install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Make sure Jupyter or VS Code with the Jupyter extension is working on your machine.
+:::
+
+::: {.callout-tip}
+## Optional but helpful
+
+- Create a free account at [huggingface.co](https://huggingface.co) so you can access models directly from the Hub during the workshop.
+- Skim the HuggingFace model card for [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet) so the model is not completely new to you on the day.
+:::

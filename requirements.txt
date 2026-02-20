@@ -1,0 +1,15 @@
+requests
+pandas
+tqdm
+PyMuPDF
+pdfminer.six
+pdfplumber
+spacy
+transformers
+sentence-transformers
+torch
+networkx
+pyvis
+matplotlib
+jupyter
+ipykernel

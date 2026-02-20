@@ -1,32 +1,52 @@
 project:
   type: website
-  output-dir: docs
-  render:
-    - index.qmd
-    - proposal-details.qmd
-    - materials.qmd
+  output-dir: _site
 
 website:
-  title: "Text Mining Workshop"
-  page-navigation: true
+  title: "Text Mining Systematic Reviews"
+  description: "A pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction. September 30, 2026 · Tilburg, Netherlands."
+  site-url: https://rasoultilburg.github.io/sociocausanet-workshop
+  repo-url: https://github.com/rasoultilburg/sociocausanet-workshop
+  repo-actions: [edit, issue]
+  open-graph: true
+
   navbar:
-    pinned: true
+    background: "#1B3A6B"
+    foreground: "white"
+    title: false
     left:
-      - text: Home
+      - text: "Home"
         href: index.qmd
-      - text: Full Proposal
-        href: proposal-details.qmd
-      - text: Materials
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: "Materials"
         href: materials.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/rasoultilburg/sociocausanet-workshop
+        aria-label: GitHub
+
+  sidebar: false
+
   page-footer:
-    left: "Text Mining Systematic Reviews Workshop"
-    right: "Tilburg University"
+    left: "Rasoul Norouzi · Tilburg University · 2026"
+    right:
+      - icon: github
+        href: https://github.com/rasoultilburg/sociocausanet-workshop
+
+  cookie-consent: false
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - flatly
+      - assets/custom.scss
+    highlight-style: github
     toc: true
-    toc-depth: 3
-    code-copy: true
+    toc-depth: 2
     smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    anchor-sections: true

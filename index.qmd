@@ -1,84 +1,116 @@
 ---
 title: "Text Mining Systematic Reviews"
-subtitle: "Pre-Conference Workshop · September 30, 2026 · Tilburg, Netherlands"
-author: "Rasoul Norouzi"
 page-layout: full
+toc: false
 ---
 
-::: {.hero-wrap}
-## Build transparent evidence maps from scientific literature
+::: {.hero-banner}
+Pre-Conference Workshop · September 30, 2026
 
-This full-day workshop teaches a deterministic, non-generative LLM pipeline for systematic reviews. Participants move from bulk paper retrieval to causal relation extraction, then build a nomological knowledge graph from published claims.
+# Text Mining Systematic Reviews
 
-[Read Full Proposal](proposal-details.qmd){.btn .btn-primary .me-2}
-[Future Materials](materials.qmd){.btn .btn-outline-light}
+Learn how to download scientific articles in bulk and analyze them
+using an evidence-based, deterministic pipeline. No generative AI.
+
+::: {.hero-meta}
+::: {.meta-item}
+📅 September 30, 2026
 :::
-
-::: {.facts-grid}
-::: {.fact-card}
-### Date
-**September 30, 2026**
+::: {.meta-item}
+📍 Tilburg, Netherlands
 :::
-
-::: {.fact-card}
-### Format
-**Full-day, in-person workshop**
+::: {.meta-item}
+🏛️ Tilburg University
 :::
-
-::: {.fact-card}
-### Location
-**Tilburg, Netherlands**
-:::
-
-::: {.fact-card}
-### Audience
-**PhD students and researchers (social sciences)**
+::: {.meta-item}
+⏱ Full day
 :::
 :::
 
-## Why this workshop
+[View Schedule](schedule.qmd){.btn-hero} &nbsp;
+[Get Materials](materials.qmd){.btn-hero style="background:#0F7B8C;"}
 
-- Deterministic, evidence-based pipeline with no generative AI.
-- End-to-end workflow from APIs and PDFs to extractable sentence datasets.
-- Structured causal extraction using `rasoultilburg/SocioCausaNet`.
-- Reproducible outputs suitable for theory-building and systematic reviews.
-
-## Learning outcomes
-
-By the end of the workshop, participants will be able to:
-
-- Retrieve papers in bulk via escince deveoped package.
-- Convert PDFs to clean text and handle common extraction artifacts.
-- Prepare sentence-level corpora using light NLP preprocessing.
-- Apply transformer tooling for deterministic sentence analysis.
-- Extract and harmonize causal claims into a nomological map.
-
-## Curriculum at a glance
-
-| Module | Focus | Output |
-|---|---|---|
-| 1. Bulk Paper Retrieval via API | API keys, search features, bulk download | Local paper corpus + metadata |
-| 2. PDF to Text Conversion | Tool comparison, extraction, cleaning | Plain-text corpus |
-| 3. Sentence Extraction & Preprocessing | Segmentation and artifact handling | Sentence dataset for model inference |
-| 4. Introduction to HuggingFace | Model cards, sentence vs token tasks, pipeline API | Runnable inference notebook |
-| 5. Causal Extraction & Knowledge Graph | SocioCausaNet inference, harmonization, graph build | Queryable nomological map |
-
-## Organization
-
-::: {.columns}
-::: {.column width="55%"}
-### Organizer
-
-**Rasoul Norouzi**  
-Department of Methodology and Statistics  
-Tilburg University  
-`r.norouzi@tilburguniversity.edu`
 :::
 
-::: {.column width="45%"}
-### Collaboration
+## About This Workshop
 
-- Netherlands eScience Center
-- Open Science Community Tilburg
+This workshop teaches you how to build a complete, transparent pipeline for
+extracting structured knowledge from published scientific papers. You will
+go from a search query all the way to a visual causal knowledge graph, using
+only deterministic models — meaning every result is traceable back to an
+exact sentence in an exact paper.
+
+The workshop is built around a real tool: **rasoultilburg/SocioCausaNet**,
+a model specifically trained to detect causal claims in social science text
+and extract the cause-effect pairs from them.
+
+## What You Will Learn
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+<div class="info-card">
+<h4>📥 Module 1</h4>
+<p>Set up API keys and use the eScience Center package to bulk-download
+papers on any topic you choose.</p>
+</div>
+
+<div class="info-card">
+<h4>📄 Module 2</h4>
+<p>Tour the major PDF-to-text tools and convert your downloaded corpus
+into clean, usable text.</p>
+</div>
+
+<div class="info-card">
+<h4>✂️ Module 3</h4>
+<p>Split paper text into sentences and run the light preprocessing steps
+needed to feed them into the model.</p>
+</div>
 :::
+
+::: {.g-col-12 .g-col-md-6}
+<div class="info-card">
+<h4>🤗 Module 4</h4>
+<p>Explore the HuggingFace Hub, understand model types, and run your
+first inference in a few lines of code.</p>
+</div>
+
+<div class="info-card">
+<h4>🕸️ Module 5</h4>
+<p>Run SocioCausaNet, harmonize the extracted social science constructs,
+and build a queryable causal knowledge graph.</p>
+</div>
+:::
+
+:::
+
+See the [Schedule](schedule.qmd) for detailed topics and code examples for each module.
+
+## Who Should Come
+
+This workshop is for:
+
+- Social science **PhD students** who want to make their literature reviews
+  faster and more systematic
+- Researchers interested in **automating qualitative reviews**
+- Anyone who wants to extract and visualize the **causal theory embedded**
+  in a field's published literature
+- People curious about NLP tools but with no background in machine learning
+
+You need basic Python familiarity. Nothing else is assumed.
+
+## This Workshop Is Relevant For
+
+- Knowledge extraction from published papers
+- Automating qualitative systematic reviews
+- Transparent and reproducible text analysis
+- Constructing theory from published causal claims
+- Creating a nomological map for a research area
+
+## Organized In Collaboration With
+
+::: {.partners-row}
+[Netherlands eScience Center](https://www.esciencecenter.nl)
+&nbsp; · &nbsp;
+[Open Science Community Tilburg](https://www.tilburguniversity.edu/research/open-science)
 :::
