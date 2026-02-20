@@ -18,7 +18,7 @@
     "href": "materials.html#suggested-page-expansion",
     "title": "Workshop Materials",
     "section": "Suggested page expansion",
-    "text": "Suggested page expansion\nAs materials grow, split this section into additional pages:\n\nmaterials/slides.qmd\nmaterials/notebooks.qmd\nmaterials/data.qmd\nmaterials/references.qmd\n\nThen add them to _quarto.yml navigation."
+    "text": "Suggested page expansion\nAs materials grow, split this section into additional pages:\n\nmaterials/slides.qmd\nmaterials/notebooks.qmd\nmaterials/data.qmd\nmaterials/references.qmd"
   },
   {
     "objectID": "index.html",

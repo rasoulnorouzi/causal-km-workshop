@@ -23,5 +23,3 @@ As materials grow, split this section into additional pages:
 - `materials/notebooks.qmd`
 - `materials/data.qmd`
 - `materials/references.qmd`
-
-Then add them to `_quarto.yml` navigation.
