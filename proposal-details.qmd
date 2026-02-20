@@ -4,80 +4,38 @@ subtitle: "Detailed curriculum, logistics, and references"
 author: "Rasoul Norouzi"
 ---
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;"><p><strong>PRE-CONFERENCE
-WORKSHOP</strong></p>
-<p><strong>Text Mining Systematic Reviews</strong></p>
-<p><em>A Deterministic, Evidence-Based LLM Pipeline for Knowledge
-Extraction</em></p></td>
-</tr>
-</tbody>
-</table>
+# PRE-CONFERENCE WORKSHOP
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;"><p>📅 Date</p>
-<p><strong>September 30, 2026</strong></p></td>
-<td style="text-align: center;"><p>⏱ Format</p>
-<p><strong>Full-Day Workshop</strong></p></td>
-<td style="text-align: center;"><p>📍 Location</p>
-<p><strong>Tilburg, Netherlands</strong></p></td>
-</tr>
-</tbody>
-</table>
+## Text Mining Systematic Reviews
+*A Deterministic, Evidence-Based LLM Pipeline for Knowledge Extraction*
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Organized by</p>
-<p><strong>Rasoul Norouzi</strong></p>
-<p>Department of Methodology and Statistics</p>
-<p>Tilburg University</p>
-<p>r.norouzi@tilburguniversity.edu</p></td>
-<td><p>In collaboration with</p>
-<p><strong>Netherlands eScience Center</strong></p>
-<p><strong>Open Science Community Tilburg</strong></p></td>
-</tr>
-</tbody>
-</table>
+---
+
+### Workshop Details
+
+📅 **Date:** September 30, 2026  
+⏱ **Format:** Full-Day Workshop  
+📍 **Location:** Tilburg, Netherlands
+
+**Organized by:**  
+Rasoul Norouzi  
+Department of Methodology and Statistics  
+Tilburg University  
+r.norouzi@tilburguniversity.edu
+
+**In collaboration with:**  
+Netherlands eScience Center  
+Open Science Community Tilburg
+
+---
+
 
 ## 1. Workshop Overview
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Abstract</strong></p>
-<p>This hands-on workshop teaches participants how to download
-scientific articles in bulk and analyze them using an evidence-based,
-deterministic LLM pipeline with no generative AI. Combining API-based
-paper retrieval, PDF-to-text conversion, classical NLP preprocessing,
-and transformer-based causal relation extraction, attendees will build a
-fully transparent and reproducible pipeline for text mining systematic
-reviews. The workshop culminates in the construction of a causal
-knowledge graph (nomological map) derived from published scientific
-claims, using the SocioCauseNet model for structured relation
-extraction.</p></td>
-</tr>
-</tbody>
-</table>
+**Abstract**
+
+This hands-on workshop teaches participants how to download scientific articles in bulk and analyze them using an evidence-based, deterministic LLM pipeline with no generative AI. Combining API-based paper retrieval, PDF-to-text conversion, classical NLP preprocessing, and transformer-based causal relation extraction, attendees will build a fully transparent and reproducible pipeline for text mining systematic reviews. The workshop culminates in the construction of a causal knowledge graph (nomological map) derived from published scientific claims, using the SocioCauseNet model for structured relation extraction.
+
 
 ### Who Should Attend
 
@@ -124,88 +82,58 @@ By the end of this workshop, participants will be able to:
 - Harmonize extracted relations and construct a nomological knowledge
   graph from published causal claims
 
+
 ### Format & Structure
 
-|  |  |
-|----|----|
-| **Format** | In-person pre-conference workshop |
-| **Approach** | Evidence-based, deterministic LLM pipeline no generative AI |
-| **Structure** | 5 modules: brief lecture overviews + hands-on Jupyter notebooks |
-| **Prerequisites** | Python basics; Jupyter/Colab environment; pip install access |
-| **Partners** | Netherlands eScience Center · Open Science Community Tilburg |
-| **Max Participants** | \[TBD\] recommend 20–40 for interactive sessions |
+- **Format:** In-person pre-conference workshop
+- **Approach:** Evidence-based, deterministic LLM pipeline (no generative AI)
+- **Structure:** 5 modules: brief lecture overviews + hands-on Jupyter notebooks
+- **Prerequisites:** Python basics; Jupyter/Colab environment; pip install access
+- **Partners:** Netherlands eScience Center · Open Science Community Tilburg
+- **Max Participants:** [TBD] recommend 20–40 for interactive sessions
+
+---
+
+
 
 ## 2. Curriculum at a Glance
 
-<table>
-<colgroup>
-<col style="width: 9%" />
-<col style="width: 34%" />
-<col style="width: 56%" />
-</colgroup>
-<tbody>
-<tr>
-<td style="text-align: center;"><strong>#</strong></td>
-<td><strong>Module / Title</strong></td>
-<td><strong>Key Topics</strong></td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>1</strong></td>
-<td><p><strong>Bulk Paper Retrieval via API</strong></p>
-<p>⏱ ~[X] min</p></td>
-<td>eScience Center download package · Setting up API keys · Exploring
-features and search options · Running a bulk download</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>2</strong></td>
-<td><p><strong>PDF to Text Conversion</strong></p>
-<p>⏱ ~[X] min</p></td>
-<td>Overview of popular tools: PyMuPDF, pdfminer, pdfplumber, GROBID,
-and newer options · Choosing the right tool · Running extraction on your
-corpus · Cleaning raw output</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>3</strong></td>
-<td><p><strong>Sentence Extraction &amp; Preprocessing</strong></p>
-<p>⏱ ~[X] min</p></td>
-<td>Sentence segmentation with spaCy · Handling extraction artifacts ·
-Light preprocessing steps · Building a sentence dataset for
-SocioCausaNet</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>4</strong></td>
-<td><p><strong>Introduction to HuggingFace</strong></p>
-<p>⏱ ~[X] min</p></td>
-<td>Navigating the HuggingFace Hub · Searching for and reading model
-cards · Sentence-level vs. token-level models · Using the pipeline API
-in a few lines of code</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>5</strong></td>
-<td><p><strong>Causal Extraction &amp; Knowledge Graph</strong></p>
-<p>⏱ ~[X] min</p></td>
-<td>rasoultilburg/SocioCausaNet on HuggingFace · Running inference on
-sentences · Harmonizing social science constructs · Graph construction
-and visualization · Querying the nomological map</td>
-</tr>
-</tbody>
-</table>
+### Module 1: Bulk Paper Retrieval via API
+⏱ ~[X] min
+
+**Key Topics:** eScience Center download package · Setting up API keys · Exploring features and search options · Running a bulk download
+
+### Module 2: PDF to Text Conversion
+⏱ ~[X] min
+
+**Key Topics:** Overview of popular tools: PyMuPDF, pdfminer, pdfplumber, GROBID, and newer options · Choosing the right tool · Running extraction on your corpus · Cleaning raw output
+
+### Module 3: Sentence Extraction & Preprocessing
+⏱ ~[X] min
+
+**Key Topics:** Sentence segmentation with spaCy · Handling extraction artifacts · Light preprocessing steps · Building a sentence dataset for SocioCausaNet
+
+### Module 4: Introduction to HuggingFace
+⏱ ~[X] min
+
+**Key Topics:** Navigating the HuggingFace Hub · Searching for and reading model cards · Sentence-level vs. token-level models · Using the pipeline API in a few lines of code
+
+### Module 5: Causal Extraction & Knowledge Graph
+⏱ ~[X] min
+
+**Key Topics:** rasoultilburg/SocioCausaNet on HuggingFace · Running inference on sentences · Harmonizing social science constructs · Graph construction and visualization · Querying the nomological map
+
+---
+
+
 
 ## 3. Detailed Module Descriptions
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Module 1 <strong>Bulk Paper Retrieval via API</strong></p>
-<p>Duration: [TBD] | Format: Lecture + Hands-on Notebook</p></td>
-</tr>
-</tbody>
-</table>
+### Module 1: Bulk Paper Retrieval via API
+*Duration: [TBD] | Format: Lecture + Hands-on Notebook*
 
-### Conceptual Overview
+#### Conceptual Overview
+
 
 We start from the very beginning: getting papers. This module introduces
 the eScience Center package for bulk downloading of scientific articles,
@@ -217,51 +145,24 @@ different options available to you. By the end of this module, you will
 have a working setup and a local collection of papers ready for the next
 steps.
 
-### Topics Covered
+#### Topics Covered
 
 - Setting up API keys and configuring your environment
-
-- Introduction to the eScience Center bulk download package: what it
-  does and how it works
-
-- Exploring the features: search filters, metadata retrieval, and
-  download options
-
+- Introduction to the eScience Center bulk download package: what it does and how it works
+- Exploring the features: search filters, metadata retrieval, and download options
 - Running your first bulk download and organizing the output
+- Handling common issues: missing papers, access restrictions, and rate limits
 
-- Handling common issues: missing papers, access restrictions, and rate
-  limits
+#### Hands-on Exercise
 
-### Hands-on Exercise
+**Exercise 1:** Set up your API keys, explore the eScience package features together, and run a bulk download on a topic of your choice. You will end the session with a folder of papers and a metadata file ready to use in the next module.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Exercise 1:</strong></p>
-<p>Set up your API keys, explore the eScience package features together,
-and run a bulk download on a topic of your choice. You will end the
-session with a folder of papers and a metadata file ready to use in the
-next module.</p></td>
-</tr>
-</tbody>
-</table>
+---
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Module 2 <strong>PDF to Text Conversion</strong></p>
-<p>Duration: [TBD] | Format: Lecture + Hands-on Notebook</p></td>
-</tr>
-</tbody>
-</table>
+### Module 2: PDF to Text Conversion
+*Duration: [TBD] | Format: Lecture + Hands-on Notebook*
 
-### Conceptual Overview
+#### Conceptual Overview
 
 Once you have your papers, the next challenge is getting the text out.
 PDFs are notoriously messy, and scientific papers make it even harder
@@ -272,49 +173,24 @@ compare what they are each good at. We will pick one tool together and
 use it to extract the text we need, keeping the focus practical rather
 than exhaustive.
 
-### Topics Covered
+#### Topics Covered
 
-- A guided tour of PDF-to-text tools: PyMuPDF, pdfminer, pdfplumber,
-  GROBID, and a look at newer alternatives
-
+- A guided tour of PDF-to-text tools: PyMuPDF, pdfminer, pdfplumber, GROBID, and a look at newer alternatives
 - What each tool handles well and where each one struggles
-
 - Choosing the right tool for scientific papers
-
 - Running the extraction on your downloaded corpus
+- Basic cleaning: removing headers, footers, reference sections, and broken line breaks
 
-- Basic cleaning: removing headers, footers, reference sections, and
-  broken line breaks
+#### Hands-on Exercise
 
-### Hands-on Exercise
+**Exercise 2:** Convert your downloaded PDFs to plain text using the tool we select together. We will inspect the output, clean up common problems, and save a text corpus that is ready to feed into the NLP pipeline.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Exercise 2:</strong></p>
-<p>Convert your downloaded PDFs to plain text using the tool we select
-together. We will inspect the output, clean up common problems, and save
-a text corpus that is ready to feed into the NLP pipeline.</p></td>
-</tr>
-</tbody>
-</table>
+---
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Module 3 <strong>NLP Tooling &amp; Preprocessing</strong></p>
-<p>Duration: [TBD] | Format: Lecture + Hands-on Notebook</p></td>
-</tr>
-</tbody>
-</table>
+### Module 3: NLP Tooling & Preprocessing
+*Duration: [TBD] | Format: Lecture + Hands-on Notebook*
 
-### Conceptual Overview
+#### Conceptual Overview
 
 The SocioCausaNet model works at the sentence level. It takes a single
 sentence and decides two things: first, whether that sentence contains a
@@ -326,51 +202,24 @@ sentences easier for the model to work with, and by the end you will
 have a sentence dataset that is ready to hand off to the model in Module
 5.
 
-### Topics Covered
+#### Topics Covered
 
 - Why sentence segmentation matters for causal extraction
-
 - Using spaCy to split paper text into sentences reliably
-
-- Handling tricky cases: abbreviations, citations inline, and broken
-  sentences from PDF extraction
-
-- A few simple preprocessing steps: stripping noise, normalizing
-  whitespace, filtering very short or very long sentences
-
+- Handling tricky cases: abbreviations, citations inline, and broken sentences from PDF extraction
+- A few simple preprocessing steps: stripping noise, normalizing whitespace, filtering very short or very long sentences
 - Building a clean sentence-level dataset from your paper corpus
 
-### Hands-on Exercise
+#### Hands-on Exercise
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Exercise 3:</strong></p>
-<p>Take your extracted paper texts, run them through a sentence
-segmentation pipeline, apply a few preprocessing steps, and produce a
-final list of sentences. This dataset will be exactly what we feed into
-SocioCausaNet in the last module.</p></td>
-</tr>
-</tbody>
-</table>
+**Exercise 3:** Take your extracted paper texts, run them through a sentence segmentation pipeline, apply a few preprocessing steps, and produce a final list of sentences. This dataset will be exactly what we feed into SocioCausaNet in the last module.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Module 4 <strong>HuggingFace &amp; Transformer
-Models</strong></p>
-<p>Duration: [TBD] | Format: Lecture + Hands-on Notebook</p></td>
-</tr>
-</tbody>
-</table>
+---
 
-### Conceptual Overview
+### Module 4: HuggingFace & Transformer Models
+*Duration: [TBD] | Format: Lecture + Hands-on Notebook*
+
+#### Conceptual Overview
 
 HuggingFace has become the go-to place for sharing and using pre-trained
 NLP models, and this module is your introduction to it. We will spend
@@ -383,55 +232,25 @@ label each word individually. The goal here is not to go deep into the
 technical details, but to give you enough familiarity that you can find
 and use models on your own after the workshop.
 
-### Topics Covered
+#### Topics Covered
 
-- Navigating the HuggingFace Hub: searching for models, reading model
-  cards, and filtering by task
-
-- Understanding model tasks: text classification, token classification,
-  feature extraction
-
+- Navigating the HuggingFace Hub: searching for models, reading model cards, and filtering by task
+- Understanding model tasks: text classification, token classification, feature extraction
 - Sentence Transformers: what they produce and when they are useful
-
 - Token-level models: how they label text word by word
+- Using the HuggingFace pipeline API to run a model in just a few lines of code
+- Finding the right model for social science text (SciBERT, domain-specific options)
 
-- Using the HuggingFace pipeline API to run a model in just a few lines
-  of code
+#### Hands-on Exercise
 
-- Finding the right model for social science text (SciBERT,
-  domain-specific options)
+**Exercise 4:** Browse the HuggingFace Hub together, find the rasoultilburg/SocioCausaNet model page, read its model card, and run your first inference using the pipeline API on a handful of sentences. No deep setup required.
 
-### Hands-on Exercise
+---
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Exercise 4:</strong></p>
-<p>Browse the HuggingFace Hub together, find the
-rasoultilburg/SocioCausaNet model page, read its model card, and run
-your first inference using the pipeline API on a handful of sentences.
-No deep setup required.</p></td>
-</tr>
-</tbody>
-</table>
+### Module 5: Causal Relation Extraction & Knowledge Graph Construction
+*Duration: [TBD] | Format: Lecture + Hands-on Notebook*
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p>Module 5 <strong>Causal Relation Extraction &amp; Knowledge Graph
-Construction</strong></p>
-<p>Duration: [TBD] | Format: Lecture + Hands-on Notebook</p></td>
-</tr>
-</tbody>
-</table>
-
-### Conceptual Overview
+#### Conceptual Overview
 
 This is where everything comes together. We run SocioCausaNet on the
 sentence dataset we built in Module 3, and for every sentence flagged as
@@ -446,45 +265,22 @@ literature say influence wellbeing, or what downstream effects does
 stress have? The result is a visual nomological map of a research area,
 built entirely from published evidence.
 
-### Topics Covered
+#### Topics Covered
 
 - Running rasoultilburg/SocioCausaNet on your sentence dataset
+- Understanding the model output: causal label, cause span, and effect span
+- Harmonizing social science constructs: grouping synonymous terms into shared nodes
+- Building the knowledge graph: concepts as nodes, causal relations as edges
+- Adding provenance: linking each edge back to the paper and sentence it came from
+- Graphical presentation: visualizing the nomological map of your research area
+- Querying the graph: finding influential constructs, causal chains, and research gaps
 
-- Understanding the model output: causal label, cause span, and effect
-  span
+#### Hands-on Exercise
 
-- Harmonizing social science constructs: grouping synonymous terms into
-  shared nodes
+**Exercise 5:** Run the full pipeline end to end: feed your sentences into SocioCausaNet, harmonize the extracted constructs, and build a causal knowledge graph. Visualize the network and run a few example queries. You will leave with a working nomological map derived entirely from published scientific claims.
 
-- Building the knowledge graph: concepts as nodes, causal relations as
-  edges
+---
 
-- Adding provenance: linking each edge back to the paper and sentence it
-  came from
-
-- Graphical presentation: visualizing the nomological map of your
-  research area
-
-- Querying the graph: finding influential constructs, causal chains, and
-  research gaps
-
-### Hands-on Exercise
-
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Exercise 5:</strong></p>
-<p>Run the full pipeline end to end: feed your sentences into
-SocioCausaNet, harmonize the extracted constructs, and build a causal
-knowledge graph. Visualize the network and run a few example queries.
-You will leave with a working nomological map derived entirely from
-published scientific claims.</p></td>
-</tr>
-</tbody>
-</table>
 
 ## 4. Logistics & Requirements
 
@@ -493,18 +289,14 @@ published scientific claims.</p></td>
 Participants must bring a laptop with:
 
 - Python 3.9+ installed (Anaconda or venv recommended)
-
 - Jupyter Notebook or access to Google Colab
-
 - Internet access for API calls and model downloads
-
 - Minimum 8 GB RAM (16 GB recommended for local model inference)
 
-Required Python packages (install guide provided in advance):
+**Required Python packages** (install guide provided in advance):
 
-|  |
-|----|
-| requests \| pandas \| PyMuPDF \| grobid-client \| spacy \| nltk \| transformers \| sentence-transformers \| torch \| networkx \| matplotlib \| tqdm |
+`requests` | `pandas` | `PyMuPDF` | `grobid-client` | `spacy` | `nltk` | `transformers` | `sentence-transformers` | `torch` | `networkx` | `matplotlib` | `tqdm`
+
 
 ### Organizer Requirements
 
@@ -517,29 +309,32 @@ Required Python packages (install guide provided in advance):
 - Optional: pre-downloaded model weights for participants with slow
   connections
 
+
 ### Schedule Template
 
-|          |              |                                               |
-|----------|--------------|-----------------------------------------------|
-| **Time** | **Duration** | **Activity**                                  |
-| \[TBD\]  | \[X\] min    | Welcome & Setup Check                         |
-| \[TBD\]  | \[X\] min    | Module 1: Bulk Paper Retrieval via API        |
-| \[TBD\]  | \[X\] min    | Module 2: PDF to Text Conversion              |
-| \[TBD\]  | \[X\] min    | **Break**                                     |
-| \[TBD\]  | \[X\] min    | Module 3: NLP Tooling & Preprocessing         |
-| \[TBD\]  | \[X\] min    | Module 4: HuggingFace & Transformer Models    |
-| \[TBD\]  | \[X\] min    | **Break**                                     |
-| \[TBD\]  | \[X\] min    | Module 5: Causal Extraction & Knowledge Graph |
-| \[TBD\]  | \[X\] min    | Q&A, Wrap-up & Next Steps                     |
+| Time | Duration | Activity |
+|------|----------|----------|
+| [TBD] | [X] min | Welcome & Setup Check |
+| [TBD] | [X] min | Module 1: Bulk Paper Retrieval via API |
+| [TBD] | [X] min | Module 2: PDF to Text Conversion |
+| [TBD] | [X] min | **Break** |
+| [TBD] | [X] min | Module 3: NLP Tooling & Preprocessing |
+| [TBD] | [X] min | Module 4: HuggingFace & Transformer Models |
+| [TBD] | [X] min | **Break** |
+| [TBD] | [X] min | Module 5: Causal Extraction & Knowledge Graph |
+| [TBD] | [X] min | Q&A, Wrap-up & Next Steps |
+
+---
+
+
 
 ## 5. Resources & References
 
 ### Key Tools & Libraries
 
-|  |  |
-|----|----|
-| **Tool** | **Purpose & Link** |
-| **eScience Download Package** | Bulk paper retrieval: github.com/\[escience-package-link\] |
+| Tool | Purpose & Link |
+|------|----------------|
+| **eScience Download Package** | Bulk paper retrieval: github.com/[escience-package-link] |
 | **PyMuPDF (fitz)** | PDF text extraction: pymupdf.readthedocs.io |
 | **GROBID** | Scientific PDF parsing: grobid.readthedocs.io |
 | **spaCy** | NLP pipeline and sentence segmentation: spacy.io |
@@ -549,40 +344,28 @@ Required Python packages (install guide provided in advance):
 | **NetworkX** | Graph construction and querying: networkx.org |
 | **Gephi / Pyvis (optional)** | Graph visualization tools |
 
+
+
 ### Suggested Reading
 
-- Devlin et al. (2019). BERT: Pre-training of Deep Bidirectional
-  Transformers for Language Understanding.
+- Devlin et al. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.
+- Reimers and Gurevych (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks.
+- Norouzi, R. et al. rasoultilburg/SocioCausaNet. [Full citation to be added]
+- Wolf et al. (2020). HuggingFace's Transformers: State-of-the-art Natural Language Processing.
+- [Additional domain-specific references to be added]
 
-- Reimers and Gurevych (2019). Sentence-BERT: Sentence Embeddings using
-  Siamese BERT-Networks.
+---
 
-- Norouzi, R. et al. rasoultilburg/SocioCausaNet. \[Full citation to be
-  added\]
 
-- Wolf et al. (2020). HuggingFace's Transformers: State-of-the-art
-  Natural Language Processing.
-
-- \[Additional domain-specific references to be added\]
 
 ### Organizer Notes
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr>
-<td><p><strong>Items still marked [TBD] to fill in before
-distribution:</strong></p>
-<p>Organizer name, department, email, affiliated conference name, max
-participant count, schedule timings per module, SocioCauseNet model link
-and full citation, and any institution-specific logistics or room
-details.</p></td>
-</tr>
-</tbody>
-</table>
+**Items still marked [TBD] to fill in before distribution:**
+
+Organizer name, department, email, affiliated conference name, max participant count, schedule timings per module, SocioCauseNet model link and full citation, and any institution-specific logistics or room details.
+
+---
 
 *Workshop Proposal: Text Mining Systematic Reviews*
 
-Rasoul Norouzi \| Tilburg University \| 2026
+Rasoul Norouzi | Tilburg University | 2026
