@@ -47,7 +47,7 @@ This full-day workshop teaches a deterministic, non-generative LLM pipeline for 
 
 By the end of the workshop, participants will be able to:
 
-- Retrieve papers in bulk via public APIs (Semantic Scholar, PubMed, CrossRef).
+- Retrieve papers in bulk via escince deveoped package.
 - Convert PDFs to clean text and handle common extraction artifacts.
 - Prepare sentence-level corpora using light NLP preprocessing.
 - Apply transformer tooling for deterministic sentence analysis.
@@ -82,11 +82,3 @@ Tilburg University
 - Open Science Community Tilburg
 :::
 :::
-
-## Publish-ready structure
-
-This site is set up for expansion. Use separate pages for slides, notebooks, datasets, and readings as they are released.
-
-- `index.qmd`: workshop landing page
-- `proposal-details.qmd`: full proposal text
-- `materials.qmd`: publication hub for workshop materials

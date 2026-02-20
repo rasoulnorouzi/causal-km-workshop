@@ -46,7 +46,7 @@
     "href": "index.html#learning-outcomes",
     "title": "Text Mining Systematic Reviews",
     "section": "Learning outcomes",
-    "text": "Learning outcomes\nBy the end of the workshop, participants will be able to:\n\nRetrieve papers in bulk via public APIs (Semantic Scholar, PubMed, CrossRef).\nConvert PDFs to clean text and handle common extraction artifacts.\nPrepare sentence-level corpora using light NLP preprocessing.\nApply transformer tooling for deterministic sentence analysis.\nExtract and harmonize causal claims into a nomological map."
+    "text": "Learning outcomes\nBy the end of the workshop, participants will be able to:\n\nRetrieve papers in bulk via escince deveoped package.\nConvert PDFs to clean text and handle common extraction artifacts.\nPrepare sentence-level corpora using light NLP preprocessing.\nApply transformer tooling for deterministic sentence analysis.\nExtract and harmonize causal claims into a nomological map."
   },
   {
     "objectID": "index.html#curriculum-at-a-glance",
@@ -61,13 +61,6 @@
     "title": "Text Mining Systematic Reviews",
     "section": "Organization",
     "text": "Organization\n\n\n\nOrganizer\nRasoul Norouzi\nDepartment of Methodology and Statistics\nTilburg University\nr.norouzi@tilburguniversity.edu\n\n\n\nCollaboration\n\nNetherlands eScience Center\nOpen Science Community Tilburg"
-  },
-  {
-    "objectID": "index.html#publish-ready-structure",
-    "href": "index.html#publish-ready-structure",
-    "title": "Text Mining Systematic Reviews",
-    "section": "Publish-ready structure",
-    "text": "Publish-ready structure\nThis site is set up for expansion. Use separate pages for slides, notebooks, datasets, and readings as they are released.\n\nindex.qmd: workshop landing page\nproposal-details.qmd: full proposal text\nmaterials.qmd: publication hub for workshop materials"
   },
   {
     "objectID": "proposal-details.html",

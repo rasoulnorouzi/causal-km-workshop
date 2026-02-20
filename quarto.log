@@ -39,3 +39,32 @@ Opening in existing browser session.
   subtitle: Release hub for notebooks, slides, and datasets
   
 [32mGET: /materials.html[39m
+[1mpandoc [22m
+  to: html
+  output-file: index.html
+  standalone: true
+  title-prefix: Text Mining Workshop
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  css:
+    - styles.css
+  toc: true
+  toc-depth: 3
+  variables: {}
+  
+[1mmetadata[22m
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  theme: cosmo
+  code-copy: true
+  smooth-scroll: true
+  title: Text Mining Systematic Reviews
+  subtitle: Pre-Conference Workshop · September 30, 2026 · Tilburg, Netherlands
+  author: Rasoul Norouzi
+  page-layout: full
+  
+[32mGET: /[39m
