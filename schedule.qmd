@@ -22,12 +22,12 @@ All times are approximate and may shift slightly on the day.
 </tr>
 <tr>
   <td class="time-col">[FILL]</td>
-  <td><strong>Module 1</strong> — Bulk Paper Retrieval</td>
+  <td><strong>Module 1</strong>: Bulk Paper Retrieval</td>
   <td>API keys, eScience Center download package, running your first bulk download</td>
 </tr>
 <tr>
   <td class="time-col">[FILL]</td>
-  <td><strong>Module 2</strong> — PDF to Text</td>
+  <td><strong>Module 2</strong>: PDF to Text</td>
   <td>Tool tour (PyMuPDF, pdfminer, GROBID), extraction, basic cleaning</td>
 </tr>
 <tr class="break-row">
@@ -36,12 +36,12 @@ All times are approximate and may shift slightly on the day.
 </tr>
 <tr>
   <td class="time-col">[FILL]</td>
-  <td><strong>Module 3</strong> — Sentence Extraction</td>
+  <td><strong>Module 3</strong>: Sentence Extraction</td>
   <td>Sentence segmentation with spaCy, preprocessing for model input</td>
 </tr>
 <tr>
   <td class="time-col">[FILL]</td>
-  <td><strong>Module 4</strong> — HuggingFace Intro</td>
+  <td><strong>Module 4</strong>: HuggingFace Intro</td>
   <td>Navigating the Hub, model cards, sentence vs. token models, pipeline API</td>
 </tr>
 <tr class="break-row">
@@ -50,7 +50,7 @@ All times are approximate and may shift slightly on the day.
 </tr>
 <tr>
   <td class="time-col">[FILL]</td>
-  <td><strong>Module 5</strong> — Causal Extraction and Knowledge Graph</td>
+  <td><strong>Module 5</strong>: Causal Extraction and Knowledge Graph</td>
   <td>SocioCausaNet inference, harmonizing constructs, graph construction, querying the nomological map</td>
 </tr>
 <tr>
@@ -73,11 +73,11 @@ All times are approximate and may shift slightly on the day.
 - Running your first bulk download and organizing the output
 
 ```python
-from [FILL] import download_papers
+from paper_downloader import download_papers
 
 results = download_papers(
-    query="stress workplace wellbeing",
-    max_results=100,
+    query="workplace stress wellbeing",
+    max_results=50,
     output_dir="./papers"
 )
 ```
@@ -162,7 +162,7 @@ print(result)
 **What you'll have:** A visual causal knowledge graph built entirely from published scientific claims in your corpus.
 
 - Running rasoultilburg/SocioCausaNet on your sentence dataset
-- Understanding the output: causal label, cause span, effect span
+- Understanding the BIO-tagged output: B-Cause/I-Cause, B-Effect/I-Effect spans
 - Harmonizing social science constructs: grouping synonymous terms into shared nodes
 - Building the knowledge graph: concepts as nodes, causal relations as directed edges
 - Adding provenance: linking each edge back to the source paper and sentence
@@ -173,19 +173,38 @@ print(result)
 from transformers import pipeline
 import networkx as nx
 
-causal_model = pipeline(
+model = pipeline(
     "token-classification",
     model="rasoultilburg/SocioCausaNet",
     aggregation_strategy="simple"
 )
 
+def parse_bio_spans(entities):
+    """Extract cause and effect text spans from BIO-tagged entities."""
+    causes, effects = [], []
+    for ent in entities:
+        if "Cause" in ent["entity_group"]:
+            causes.append(ent["word"])
+        elif "Effect" in ent["entity_group"]:
+            effects.append(ent["word"])
+    return causes, effects
+
 G = nx.DiGraph()
 
-for cause, effect, source_sentence in relations:
-    G.add_edge(cause, effect, sentence=source_sentence)
+sentences = [
+    "Increased workload leads to higher levels of burnout.",
+    "Social support reduces workplace stress."
+]
 
-# Query: what does 'stress' cause?
-print(list(G.successors("stress")))
+for sent in sentences:
+    entities = model(sent)
+    causes, effects = parse_bio_spans(entities)
+    for cause in causes:
+        for effect in effects:
+            G.add_edge(cause, effect, sentence=sent)
+
+# Query: what does 'workload' cause?
+print(list(G.successors("workload")))
 ```
 
 ---

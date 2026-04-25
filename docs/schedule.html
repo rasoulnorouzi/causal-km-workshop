@@ -117,6 +117,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/tilburglogo.png" alt="Tilburg University" class="navbar-logo light-content">
+    <img src="./assets/tilburglogo.png" alt="Tilburg University" class="navbar-logo dark-content">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -130,10 +136,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li class="nav-item">
     <a class="nav-link active" href="./schedule.html" aria-current="page"> 
 <span class="menu-text">Schedule</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./materials.html"> 
-<span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
@@ -222,7 +224,7 @@ Introductions, environment check, repo clone, install dependencies
 [FILL]
 </td>
 <td>
-<strong>Module 1</strong> — Bulk Paper Retrieval
+<strong>Module 1</strong>: Bulk Paper Retrieval
 </td>
 <td>
 API keys, eScience Center download package, running your first bulk download
@@ -233,7 +235,7 @@ API keys, eScience Center download package, running your first bulk download
 [FILL]
 </td>
 <td>
-<strong>Module 2</strong> — PDF to Text
+<strong>Module 2</strong>: PDF to Text
 </td>
 <td>
 Tool tour (PyMuPDF, pdfminer, GROBID), extraction, basic cleaning
@@ -252,7 +254,7 @@ Tool tour (PyMuPDF, pdfminer, GROBID), extraction, basic cleaning
 [FILL]
 </td>
 <td>
-<strong>Module 3</strong> — Sentence Extraction
+<strong>Module 3</strong>: Sentence Extraction
 </td>
 <td>
 Sentence segmentation with spaCy, preprocessing for model input
@@ -263,7 +265,7 @@ Sentence segmentation with spaCy, preprocessing for model input
 [FILL]
 </td>
 <td>
-<strong>Module 4</strong> — HuggingFace Intro
+<strong>Module 4</strong>: HuggingFace Intro
 </td>
 <td>
 Navigating the Hub, model cards, sentence vs.&nbsp;token models, pipeline API
@@ -282,7 +284,7 @@ Navigating the Hub, model cards, sentence vs.&nbsp;token models, pipeline API
 [FILL]
 </td>
 <td>
-<strong>Module 5</strong> — Causal Extraction and Knowledge Graph
+<strong>Module 5</strong>: Causal Extraction and Knowledge Graph
 </td>
 <td>
 SocioCausaNet inference, harmonizing constructs, graph construction, querying the nomological map
@@ -312,11 +314,11 @@ Open questions, next steps, how to apply this to your own research
 <li>Exploring features: search filters, metadata retrieval, download options</li>
 <li>Running your first bulk download and organizing the output</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> [FILL] <span class="im">import</span> download_papers</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> paper_downloader <span class="im">import</span> download_papers</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> download_papers(</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    query<span class="op">=</span><span class="st">"stress workplace wellbeing"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    max_results<span class="op">=</span><span class="dv">100</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    query<span class="op">=</span><span class="st">"workplace stress wellbeing"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    max_results<span class="op">=</span><span class="dv">50</span>,</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    output_dir<span class="op">=</span><span class="st">"./papers"</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
@@ -390,7 +392,7 @@ Open questions, next steps, how to apply this to your own research
 <p><strong>What you’ll have:</strong> A visual causal knowledge graph built entirely from published scientific claims in your corpus.</p>
 <ul>
 <li>Running rasoultilburg/SocioCausaNet on your sentence dataset</li>
-<li>Understanding the output: causal label, cause span, effect span</li>
+<li>Understanding the BIO-tagged output: B-Cause/I-Cause, B-Effect/I-Effect spans</li>
 <li>Harmonizing social science constructs: grouping synonymous terms into shared nodes</li>
 <li>Building the knowledge graph: concepts as nodes, causal relations as directed edges</li>
 <li>Adding provenance: linking each edge back to the source paper and sentence</li>
@@ -400,19 +402,38 @@ Open questions, next steps, how to apply this to your own research
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> transformers <span class="im">import</span> pipeline</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>causal_model <span class="op">=</span> pipeline(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> pipeline(</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"token-classification"</span>,</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    model<span class="op">=</span><span class="st">"rasoultilburg/SocioCausaNet"</span>,</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    aggregation_strategy<span class="op">=</span><span class="st">"simple"</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.DiGraph()</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cause, effect, source_sentence <span class="kw">in</span> relations:</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    G.add_edge(cause, effect, sentence<span class="op">=</span>source_sentence)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Query: what does 'stress' cause?</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(G.successors(<span class="st">"stress"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parse_bio_spans(entities):</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Extract cause and effect text spans from BIO-tagged entities."""</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    causes, effects <span class="op">=</span> [], []</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> ent <span class="kw">in</span> entities:</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="st">"Cause"</span> <span class="kw">in</span> ent[<span class="st">"entity_group"</span>]:</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>            causes.append(ent[<span class="st">"word"</span>])</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">elif</span> <span class="st">"Effect"</span> <span class="kw">in</span> ent[<span class="st">"entity_group"</span>]:</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>            effects.append(ent[<span class="st">"word"</span>])</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> causes, effects</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>G <span class="op">=</span> nx.DiGraph()</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>sentences <span class="op">=</span> [</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Increased workload leads to higher levels of burnout."</span>,</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Social support reduces workplace stress."</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> sent <span class="kw">in</span> sentences:</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    entities <span class="op">=</span> model(sent)</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    causes, effects <span class="op">=</span> parse_bio_spans(entities)</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> cause <span class="kw">in</span> causes:</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> effect <span class="kw">in</span> effects:</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>            G.add_edge(cause, effect, sentence<span class="op">=</span>sent)</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Query: what does 'workload' cause?</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">list</span>(G.successors(<span class="st">"workload"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>

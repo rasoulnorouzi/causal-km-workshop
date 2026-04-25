@@ -9,11 +9,11 @@ Each module has a corresponding Jupyter notebook. Starter notebooks with empty c
 
 | Module | Topic | Status |
 |--------|-------|--------|
-| 1 | Bulk Paper Retrieval | [FILL — add link after workshop] |
-| 2 | PDF to Text | [FILL — add link after workshop] |
-| 3 | Sentence Extraction | [FILL — add link after workshop] |
-| 4 | HuggingFace Intro | [FILL — add link after workshop] |
-| 5 | Causal Knowledge Graph | [FILL — add link after workshop] |
+| 1 | Bulk Paper Retrieval | [FILL:add link after workshop] |
+| 2 | PDF to Text | [FILL:add link after workshop] |
+| 3 | Sentence Extraction | [FILL:add link after workshop] |
+| 4 | HuggingFace Intro | [FILL:add link after workshop] |
+| 5 | Causal Knowledge Graph | [FILL:add link after workshop] |
 
 ## Slides
 
@@ -21,18 +21,18 @@ Slides will be posted after the workshop in PDF format.
 
 | Module | Slides |
 |--------|--------|
-| 1 — Bulk Paper Retrieval | [FILL — add link after workshop] |
-| 2 — PDF to Text | [FILL — add link after workshop] |
-| 3 — Sentence Extraction | [FILL — add link after workshop] |
-| 4 — HuggingFace Intro | [FILL — add link after workshop] |
-| 5 — Causal Knowledge Graph | [FILL — add link after workshop] |
+| 1:Bulk Paper Retrieval | [FILL:add link after workshop] |
+| 2:PDF to Text | [FILL:add link after workshop] |
+| 3:Sentence Extraction | [FILL:add link after workshop] |
+| 4:HuggingFace Intro | [FILL:add link after workshop] |
+| 5:Causal Knowledge Graph | [FILL:add link after workshop] |
 
 ## Data and Model
 
 - **SocioCausaNet on HuggingFace:**
   [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet)
-- **Sample paper corpus:** [FILL — add link after workshop]
-- **Example output graph:** [FILL — add link after workshop]
+- **Sample paper corpus:** [FILL:add link after workshop]
+- **Example output graph:** [FILL:add link after workshop]
 
 ## Module Overview
 

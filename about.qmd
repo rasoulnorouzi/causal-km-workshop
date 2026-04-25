@@ -5,23 +5,29 @@ toc: false
 
 ## Instructor
 
+![Rasoul Norouzi](assets/rass_profile.jpg){width="200px" style="border-radius: 50%; float: right; margin-left: 1.5rem; margin-bottom: 1rem;"}
+
 **Rasoul Norouzi**
 Department of Methodology and Statistics, Tilburg University
 
-Rasoul's research focuses on computational methods for systematic review,
-causal knowledge extraction from scientific text, and the application of
-NLP in social science research. He developed the SocioCausaNet model,
-which is at the heart of this workshop.
+Rasoul Norouzi is a PhD candidate in social science at Tilburg University. His research uses natural language processing to support theory development and refinement in the social sciences. He works on language models for causal information extraction from scientific text, graph-based methods for analyzing causal claims, and text mining to support transparent and reproducible research synthesis.
+He developed SocioCausaNet, the multitask model at the heart of this workshop. He is affiliated with the Insight Lab, the CPCM Lab, and the Meta-Research Lab at Tilburg University. 
 
-[FILL — add short bio paragraph here]
+Prior to his PhD, Rasoul earned an M.Sc. by Research in Information Technology from Tarbiat Modares University, Tehran.
+
+When he is not training models, he is usually building small tools to make research life a bit less painful, and putting them on GitHub for whoever needs them.
 
 📧 [r.norouzi@tilburguniversity.edu](mailto:r.norouzi@tilburguniversity.edu)
-🐦 [FILL — add Twitter/X handle if applicable]
-🔗 [FILL — add personal/lab website if applicable]
+🌐 [rasoulnorouzi.github.io](https://rasoulnorouzi.github.io)
+🔗 [GitHub](https://github.com/rasoulnorouzi)
+📚 [Google Scholar](https://scholar.google.com/citations?user=syJhsDMAAAAJ)
+🆔 [ORCID 0000-0002-4447-764X](https://orcid.org/0000-0002-4447-764X)
 
 ---
 
 ## Organized In Collaboration With
+
+![Tilburg University](assets/tilburglogo.png)
 
 ### Netherlands eScience Center
 
@@ -33,22 +39,33 @@ package used in Module 1 of this workshop.
 
 ### Open Science Community Tilburg
 
+![Open Science Community Tilburg](assets/opensciencetilburg.webp){width="180px"}
+
 The Open Science Community Tilburg is a network of researchers at Tilburg
 University committed to open and reproducible research practices.
 
-[FILL — add OSCT link]
+[https://www.tilburguniversity.edu/research/open-science-community](https://www.tilburguniversity.edu/research/open-science-community)
+
+### Insight Lab
+
+Insight Lab develops transparent and reproducible methods for social science
+research, led by Dr. Caspar van Lissa at Tilburg University.
+
+[https://cjvanlissa.github.io/insight_lab/](https://cjvanlissa.github.io/insight_lab/)
 
 ---
 
 ## About the Workshop
+
+![Tilburg University campus](assets/tilburg.webp)
 
 This workshop is a pre-conference event on **September 30, 2026** in
 Tilburg, Netherlands. It was designed to give social science researchers
 practical, hands-on experience with a reproducible text mining pipeline
 that requires no background in machine learning.
 
-The full pipeline — from downloading papers to a visual causal knowledge
-graph — uses only deterministic, evidence-based models. Every result the
+The full pipeline, from downloading papers to a visual causal knowledge
+graph, uses only deterministic, evidence-based models. Every result the
 pipeline produces can be traced back to an exact sentence in an exact paper.
 
 ---

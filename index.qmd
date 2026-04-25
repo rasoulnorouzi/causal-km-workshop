@@ -27,8 +27,7 @@ using an evidence-based, deterministic pipeline. No generative AI.
 :::
 :::
 
-[View Schedule](schedule.qmd){.btn-hero} &nbsp;
-[Get Materials](materials.qmd){.btn-hero style="background:#0F7B8C;"}
+[View Schedule](schedule.qmd){.btn-hero}
 
 :::
 
@@ -37,7 +36,7 @@ using an evidence-based, deterministic pipeline. No generative AI.
 This workshop teaches you how to build a complete, transparent pipeline for
 extracting structured knowledge from published scientific papers. You will
 go from a search query all the way to a visual causal knowledge graph, using
-only deterministic models — meaning every result is traceable back to an
+only deterministic models, meaning every result is traceable back to an
 exact sentence in an exact paper.
 
 The workshop is built around a real tool: **rasoultilburg/SocioCausaNet**,
@@ -110,7 +109,10 @@ You need basic Python familiarity. Nothing else is assumed.
 ## Organized In Collaboration With
 
 ::: {.partners-row}
+![Tilburg University](assets/tilburglogo.png)
 [Netherlands eScience Center](https://www.esciencecenter.nl)
 &nbsp; · &nbsp;
-[Open Science Community Tilburg](https://www.tilburguniversity.edu/research/open-science)
+[Open Science Community Tilburg](https://www.tilburguniversity.edu/research/open-science-community)
+&nbsp; · &nbsp;
+[Insight Lab](https://cjvanlissa.github.io/insight_lab/)
 :::

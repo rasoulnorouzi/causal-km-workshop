@@ -14,13 +14,13 @@ website:
     background: "#1B3A6B"
     foreground: "white"
     title: false
+    logo: assets/tilburglogo.png
+    logo-alt: "Tilburg University"
     left:
       - text: "Home"
         href: index.qmd
       - text: "Schedule"
         href: schedule.qmd
-      - text: "Materials"
-        href: materials.qmd
       - text: "About"
         href: about.qmd
     right:
