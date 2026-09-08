@@ -9,11 +9,11 @@ Each module has a corresponding Jupyter notebook. Starter notebooks with empty c
 
 | Module | Topic | Status |
 |--------|-------|--------|
-| 1 | Bulk Paper Retrieval | [FILL:add link after workshop] |
-| 2 | PDF to Text | [FILL:add link after workshop] |
-| 3 | Sentence Extraction | [FILL:add link after workshop] |
-| 4 | HuggingFace Intro | [FILL:add link after workshop] |
-| 5 | Causal Knowledge Graph | [FILL:add link after workshop] |
+| 1 | Bulk paper retrieval | [FILL:add link after workshop] |
+| 2 | PDF to sentences | [FILL:add link after workshop] |
+| 3 | Causal claims | [FILL:add link after workshop] |
+| 4 | Harmonizing constructs | [FILL:add link after workshop] |
+| 5 | The causal map | [FILL:add link after workshop] |
 
 ## Slides
 
@@ -21,11 +21,11 @@ Slides will be posted after the workshop in PDF format.
 
 | Module | Slides |
 |--------|--------|
-| 1:Bulk Paper Retrieval | [FILL:add link after workshop] |
-| 2:PDF to Text | [FILL:add link after workshop] |
-| 3:Sentence Extraction | [FILL:add link after workshop] |
-| 4:HuggingFace Intro | [FILL:add link after workshop] |
-| 5:Causal Knowledge Graph | [FILL:add link after workshop] |
+| 1: Bulk paper retrieval | [FILL:add link after workshop] |
+| 2: PDF to sentences | [FILL:add link after workshop] |
+| 3: Causal claims | [FILL:add link after workshop] |
+| 4: Harmonizing constructs | [FILL:add link after workshop] |
+| 5: The causal map | [FILL:add link after workshop] |
 
 ## Data and Model
 
@@ -36,7 +36,7 @@ Slides will be posted after the workshop in PDF format.
 
 ## Module Overview
 
-For a complete overview of what each module covers, see the [full Schedule](schedule.qmd) page which includes detailed topics and code examples for each module.
+For a complete overview of what each module covers, see the [full Schedule](schedule.qmd) page which includes the timing and a description of each part.
 
 ## Requirements File
 

@@ -14,16 +14,16 @@ using an evidence-based, deterministic pipeline. No generative AI.
 
 ::: {.hero-meta}
 ::: {.meta-item}
-📅 September 30, 2026
+September 30, 2026
 :::
 ::: {.meta-item}
-📍 Tilburg, Netherlands
+Tilburg, Netherlands
 :::
 ::: {.meta-item}
-🏛️ Tilburg University
+Tilburg University
 :::
 ::: {.meta-item}
-⏱ Full day
+10:00 – 16:00
 :::
 :::
 
@@ -49,41 +49,41 @@ and extract the cause-effect pairs from them.
 
 ::: {.g-col-12 .g-col-md-6}
 <div class="info-card">
-<h4>📥 Module 1</h4>
-<p>Set up API keys and use the eScience Center package to bulk-download
-papers on any topic you choose.</p>
+<h4>Bulk paper retrieval</h4>
+<p>Set up API access and use the eScience Center package to download
+papers on a topic of your choice.</p>
 </div>
 
 <div class="info-card">
-<h4>📄 Module 2</h4>
-<p>Tour the major PDF-to-text tools and convert your downloaded corpus
-into clean, usable text.</p>
+<h4>PDF to sentences</h4>
+<p>Get text out of PDFs, clean away the page furniture and citations,
+and split what is left into sentences.</p>
 </div>
 
 <div class="info-card">
-<h4>✂️ Module 3</h4>
-<p>Split paper text into sentences and run the light preprocessing steps
-needed to feed them into the model.</p>
+<h4>Causal claims</h4>
+<p>Run SocioCausaNet to find the sentences that state a cause and an
+effect, and mark both spans.</p>
 </div>
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 <div class="info-card">
-<h4>🤗 Module 4</h4>
-<p>Explore the HuggingFace Hub, understand model types, and run your
-first inference in a few lines of code.</p>
+<h4>Harmonizing constructs</h4>
+<p>Three ways to deal with the same construct being worded differently
+in every paper: a published taxonomy, similarity groups, or clusters.</p>
 </div>
 
 <div class="info-card">
-<h4>🕸️ Module 5</h4>
-<p>Run SocioCausaNet, harmonize the extracted social science constructs,
-and build a queryable causal knowledge graph.</p>
+<h4>The causal map</h4>
+<p>Assemble the pairs into a graph, follow causal chains, and trace any
+edge back to the sentence it came from.</p>
 </div>
 :::
 
 :::
 
-See the [Schedule](schedule.qmd) for detailed topics and code examples for each module.
+See the [Schedule](schedule.qmd) for the timing and a fuller description of each part.
 
 ## Who Should Come
 

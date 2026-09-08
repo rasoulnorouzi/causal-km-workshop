@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Text Mining Systematic Reviews",
     "section": "",
-    "text": "Pre-Conference Workshop · September 30, 2026\n\n\nLearn how to download scientific articles in bulk and analyze them using an evidence-based, deterministic pipeline. No generative AI.\n\n\n📅 September 30, 2026\n\n\n📍 Tilburg, Netherlands\n\n\n🏛️ Tilburg University\n\n\n⏱ Full day\n\n\nView Schedule"
+    "text": "Pre-Conference Workshop · September 30, 2026\n\n\nLearn how to download scientific articles in bulk and analyze them using an evidence-based, deterministic pipeline. No generative AI.\n\n\nSeptember 30, 2026\n\n\nTilburg, Netherlands\n\n\nTilburg University\n\n\n10:00 – 16:00\n\n\nView Schedule"
   },
   {
     "objectID": "index.html#about-this-workshop",
@@ -18,7 +18,7 @@
     "href": "index.html#what-you-will-learn",
     "title": "Text Mining Systematic Reviews",
     "section": "What You Will Learn",
-    "text": "What You Will Learn\n\n\n\n\n📥 Module 1\n\n\nSet up API keys and use the eScience Center package to bulk-download papers on any topic you choose.\n\n\n\n\n📄 Module 2\n\n\nTour the major PDF-to-text tools and convert your downloaded corpus into clean, usable text.\n\n\n\n\n✂️ Module 3\n\n\nSplit paper text into sentences and run the light preprocessing steps needed to feed them into the model.\n\n\n\n\n\n\n🤗 Module 4\n\n\nExplore the HuggingFace Hub, understand model types, and run your first inference in a few lines of code.\n\n\n\n\n🕸️ Module 5\n\n\nRun SocioCausaNet, harmonize the extracted social science constructs, and build a queryable causal knowledge graph.\n\n\n\n\nSee the Schedule for detailed topics and code examples for each module."
+    "text": "What You Will Learn\n\n\n\n\nBulk paper retrieval\n\n\nSet up API access and use the eScience Center package to download papers on a topic of your choice.\n\n\n\n\nPDF to sentences\n\n\nGet text out of PDFs, clean away the page furniture and citations, and split what is left into sentences.\n\n\n\n\nCausal claims\n\n\nRun SocioCausaNet to find the sentences that state a cause and an effect, and mark both spans.\n\n\n\n\n\n\nHarmonizing constructs\n\n\nThree ways to deal with the same construct being worded differently in every paper: a published taxonomy, similarity groups, or clusters.\n\n\n\n\nThe causal map\n\n\nAssemble the pairs into a graph, follow causal chains, and trace any edge back to the sentence it came from.\n\n\n\n\nSee the Schedule for the timing and a fuller description of each part."
   },
   {
     "objectID": "index.html#who-should-come",
@@ -46,7 +46,7 @@
     "href": "schedule.html",
     "title": "Workshop Schedule",
     "section": "",
-    "text": "All times are approximate and may shift slightly on the day."
+    "text": "The workshop runs from 10:00 to 16:00, following the same day rhythm as the main conference. Coffee is available on arrival, and there is a break in each half of the day."
   },
   {
     "objectID": "schedule.html#module-details",
@@ -60,28 +60,28 @@
     "href": "schedule.html#preparation-before-the-workshop",
     "title": "Workshop Schedule",
     "section": "Preparation Before the Workshop",
-    "text": "Preparation Before the Workshop\nPlease do the following before arriving so we can start on time:\n\n\n\n\n\n\nImportantRequired setup\n\n\n\n\nClone the workshop repository:\ngit clone https://github.com/rasoultilburg/sociocausanet-workshop.git\nCreate a virtual environment and install dependencies:\npip install -r requirements.txt\nMake sure Jupyter or VS Code with the Jupyter extension is working on your machine.\n\n\n\n\n\n\n\n\n\nTipOptional but helpful\n\n\n\n\nCreate a free account at huggingface.co so you can access models directly from the Hub during the workshop.\nSkim the HuggingFace model card for rasoultilburg/SocioCausaNet so the model is not completely new to you on the day."
+    "text": "Preparation Before the Workshop\nYou can follow the workshop either on your own machine or in Google Colab. Choose one and have it working before you arrive, so we can start on time.\n\n\n\n\n\n\nImportantRequired setup: pick one\n\n\n\nOn your own machine\n\nInstall the latest version of Python from python.org/downloads.\nHave a working notebook environment: either Jupyter, or VS Code with the Jupyter extension (setup guide).\nOpen a notebook and run a cell before the day, so you know it works.\n\nIn Google Colab\n\nNothing to install. Make sure you have an active Google account you can sign in with on the day (create one).\n\n\n\n\n\n\n\n\n\nNoteWorkshop package: instructions coming shortly\n\n\n\nThe workshop package is not ready to install yet. Setup instructions will be posted on this page in a few days. Please check back shortly before the workshop.\n\n\n\n\n\n\n\n\nTipOptional but helpful\n\n\n\n\nCreate a free account at huggingface.co so you can load models from the Hub during the workshop.\nSkim the model card for rasoultilburg/SocioCausaNet so the model is not new to you on the day.\n\n\n\n\n\n\n\n\n\nNoteIf you cannot make it\n\n\n\nWe assume everyone who registered will attend. If your plans change, please email r.norouzinijeh@tilburguniversity.edu so we can adjust the catering numbers."
   },
   {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.\n\n\n\nModule\nTopic\nStatus\n\n\n\n\n1\nBulk Paper Retrieval\n[FILL:add link after workshop]\n\n\n2\nPDF to Text\n[FILL:add link after workshop]\n\n\n3\nSentence Extraction\n[FILL:add link after workshop]\n\n\n4\nHuggingFace Intro\n[FILL:add link after workshop]\n\n\n5\nCausal Knowledge Graph\n[FILL:add link after workshop]"
+    "text": "Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.\n\n\n\nModule\nTopic\nStatus\n\n\n\n\n1\nBulk paper retrieval\n[FILL:add link after workshop]\n\n\n2\nPDF to sentences\n[FILL:add link after workshop]\n\n\n3\nCausal claims\n[FILL:add link after workshop]\n\n\n4\nHarmonizing constructs\n[FILL:add link after workshop]\n\n\n5\nThe causal map\n[FILL:add link after workshop]"
   },
   {
     "objectID": "materials.html#notebooks",
     "href": "materials.html#notebooks",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.\n\n\n\nModule\nTopic\nStatus\n\n\n\n\n1\nBulk Paper Retrieval\n[FILL:add link after workshop]\n\n\n2\nPDF to Text\n[FILL:add link after workshop]\n\n\n3\nSentence Extraction\n[FILL:add link after workshop]\n\n\n4\nHuggingFace Intro\n[FILL:add link after workshop]\n\n\n5\nCausal Knowledge Graph\n[FILL:add link after workshop]"
+    "text": "Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.\n\n\n\nModule\nTopic\nStatus\n\n\n\n\n1\nBulk paper retrieval\n[FILL:add link after workshop]\n\n\n2\nPDF to sentences\n[FILL:add link after workshop]\n\n\n3\nCausal claims\n[FILL:add link after workshop]\n\n\n4\nHarmonizing constructs\n[FILL:add link after workshop]\n\n\n5\nThe causal map\n[FILL:add link after workshop]"
   },
   {
     "objectID": "materials.html#slides",
     "href": "materials.html#slides",
     "title": "Workshop Materials",
     "section": "Slides",
-    "text": "Slides\nSlides will be posted after the workshop in PDF format.\n\n\n\nModule\nSlides\n\n\n\n\n1:Bulk Paper Retrieval\n[FILL:add link after workshop]\n\n\n2:PDF to Text\n[FILL:add link after workshop]\n\n\n3:Sentence Extraction\n[FILL:add link after workshop]\n\n\n4:HuggingFace Intro\n[FILL:add link after workshop]\n\n\n5:Causal Knowledge Graph\n[FILL:add link after workshop]"
+    "text": "Slides\nSlides will be posted after the workshop in PDF format.\n\n\n\nModule\nSlides\n\n\n\n\n1: Bulk paper retrieval\n[FILL:add link after workshop]\n\n\n2: PDF to sentences\n[FILL:add link after workshop]\n\n\n3: Causal claims\n[FILL:add link after workshop]\n\n\n4: Harmonizing constructs\n[FILL:add link after workshop]\n\n\n5: The causal map\n[FILL:add link after workshop]"
   },
   {
     "objectID": "materials.html#data-and-model",
@@ -95,7 +95,7 @@
     "href": "materials.html#module-overview",
     "title": "Workshop Materials",
     "section": "Module Overview",
-    "text": "Module Overview\nFor a complete overview of what each module covers, see the full Schedule page which includes detailed topics and code examples for each module."
+    "text": "Module Overview\nFor a complete overview of what each module covers, see the full Schedule page which includes the timing and a description of each part."
   },
   {
     "objectID": "materials.html#requirements-file",
@@ -116,14 +116,14 @@
     "href": "about.html",
     "title": "About This Workshop",
     "section": "",
-    "text": "Rasoul Norouzi\n\n\nRasoul Norouzi Department of Methodology and Statistics, Tilburg University\nRasoul Norouzi is a PhD candidate in social science at Tilburg University. His research uses natural language processing to support theory development and refinement in the social sciences. He works on language models for causal information extraction from scientific text, graph-based methods for analyzing causal claims, and text mining to support transparent and reproducible research synthesis. He developed SocioCausaNet, the multitask model at the heart of this workshop. He is affiliated with the Insight Lab, the CPCM Lab, and the Meta-Research Lab at Tilburg University.\nPrior to his PhD, Rasoul earned an M.Sc. by Research in Information Technology from Tarbiat Modares University, Tehran.\nWhen he is not training models, he is usually building small tools to make research life a bit less painful, and putting them on GitHub for whoever needs them.\n📧 r.norouzi@tilburguniversity.edu 🌐 rasoulnorouzi.github.io 🔗 GitHub 📚 Google Scholar 🆔 ORCID 0000-0002-4447-764X"
+    "text": "Rasoul Norouzi\n\n\nRasoul Norouzi Department of Methodology and Statistics, Tilburg University\nRasoul Norouzi is a PhD candidate in social science at Tilburg University. His research uses natural language processing to support theory development and refinement in the social sciences. He works on language models for causal information extraction from scientific text, graph-based methods for analyzing causal claims, and text mining to support transparent and reproducible research synthesis. He developed SocioCausaNet, the multitask model at the heart of this workshop. He is affiliated with the Insight Lab, the CPCM Lab, and the Meta-Research Lab at Tilburg University.\nPrior to his PhD, Rasoul earned an M.Sc. by Research in Information Technology from Tarbiat Modares University, Tehran.\nWhen he is not training models, he is usually building small tools to make research life a bit less painful, and putting them on GitHub for whoever needs them.\nr.norouzi@tilburguniversity.edu rasoulnorouzi.github.io GitHub Google Scholar ORCID 0000-0002-4447-764X"
   },
   {
     "objectID": "about.html#instructor",
     "href": "about.html#instructor",
     "title": "About This Workshop",
     "section": "",
-    "text": "Rasoul Norouzi\n\n\nRasoul Norouzi Department of Methodology and Statistics, Tilburg University\nRasoul Norouzi is a PhD candidate in social science at Tilburg University. His research uses natural language processing to support theory development and refinement in the social sciences. He works on language models for causal information extraction from scientific text, graph-based methods for analyzing causal claims, and text mining to support transparent and reproducible research synthesis. He developed SocioCausaNet, the multitask model at the heart of this workshop. He is affiliated with the Insight Lab, the CPCM Lab, and the Meta-Research Lab at Tilburg University.\nPrior to his PhD, Rasoul earned an M.Sc. by Research in Information Technology from Tarbiat Modares University, Tehran.\nWhen he is not training models, he is usually building small tools to make research life a bit less painful, and putting them on GitHub for whoever needs them.\n📧 r.norouzi@tilburguniversity.edu 🌐 rasoulnorouzi.github.io 🔗 GitHub 📚 Google Scholar 🆔 ORCID 0000-0002-4447-764X"
+    "text": "Rasoul Norouzi\n\n\nRasoul Norouzi Department of Methodology and Statistics, Tilburg University\nRasoul Norouzi is a PhD candidate in social science at Tilburg University. His research uses natural language processing to support theory development and refinement in the social sciences. He works on language models for causal information extraction from scientific text, graph-based methods for analyzing causal claims, and text mining to support transparent and reproducible research synthesis. He developed SocioCausaNet, the multitask model at the heart of this workshop. He is affiliated with the Insight Lab, the CPCM Lab, and the Meta-Research Lab at Tilburg University.\nPrior to his PhD, Rasoul earned an M.Sc. by Research in Information Technology from Tarbiat Modares University, Tehran.\nWhen he is not training models, he is usually building small tools to make research life a bit less painful, and putting them on GitHub for whoever needs them.\nr.norouzi@tilburguniversity.edu rasoulnorouzi.github.io GitHub Google Scholar ORCID 0000-0002-4447-764X"
   },
   {
     "objectID": "about.html#organized-in-collaboration-with",
@@ -145,5 +145,12 @@
     "title": "About This Workshop",
     "section": "Citing This Workshop",
     "text": "Citing This Workshop\nIf you use materials from this workshop in your own work, please cite:\nNorouzi, R. (2026). Text Mining Systematic Reviews: A Pre-Conference\nWorkshop. Tilburg University. https://rasoultilburg.github.io/sociocausanet-workshop"
+  },
+  {
+    "objectID": "schedule.html#what-we-cover",
+    "href": "schedule.html#what-we-cover",
+    "title": "Workshop Schedule",
+    "section": "What We Cover",
+    "text": "What We Cover\n\nMorning: building a corpus\nNetherlands eScience Center\nA talk followed by a hands-on session on getting the papers in the first place. How bulk retrieval works, what the eScience Center download package does, and how to get from a search query to a folder of papers and metadata on your own machine.\nBy the end of the morning you have your own corpus on a topic you choose.\n\n\nAfternoon: from papers to a causal map\nRasoul Norouzi, Tilburg University\nThe rest of the pipeline, in four steps:\n\nPDF to sentences. Extracting text from PDFs and cleaning it: dropping running heads and page furniture, joining broken paragraphs, splitting into sentences, stripping inline citations and statistics. We also look at what got thrown away and why, because that is where most mistakes hide.\nSentences to causal claims. Running SocioCausaNet over the sentences to find the ones that state a cause and an effect, and to mark the two spans. Every relation keeps the sentence, page and document it came from.\nHarmonizing constructs. The same construct is worded differently in every paper. Three ways to deal with that: map the spans onto a published taxonomy such as ELSST or the APA thesaurus, group them by similarity, or cluster them and name the clusters. We compare what each route gives you and where each one breaks.\nThe causal map. Assembling the harmonized pairs into a graph, looking at which constructs connect the most, following causal chains, and tracing any edge back to the sentence it came from.\n\nBy the end of the day you have a causal map built from the papers you downloaded in the morning, and a pipeline you can run again on your own literature.\n\n\n\n\n\n\nNoteNo generative AI\n\n\n\nNothing in the pipeline is generated or paraphrased. Every relation in the final map points back to the exact sentence, page and paper it came from."
   }
 ]

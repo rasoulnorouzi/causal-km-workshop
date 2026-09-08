@@ -4,232 +4,153 @@ subtitle: "September 30, 2026 · Tilburg University"
 toc: true
 ---
 
-All times are approximate and may shift slightly on the day.
+The workshop runs from 10:00 to 16:00, following the same day rhythm as the main
+conference. Coffee is available on arrival, and there is a break in each half of the day.
 
 <table class="schedule-table">
 <thead>
 <tr>
   <th>Time</th>
-  <th>Module</th>
-  <th>Topics</th>
+  <th>Session</th>
+  <th>What happens</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Welcome and Setup</strong></td>
-  <td>Introductions, environment check, repo clone, install dependencies</td>
+<tr class="break-row">
+  <td class="time-col">09:45 – 10:00</td>
+  <td colspan="2">Arrival and coffee</td>
 </tr>
 <tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Module 1</strong>: Bulk Paper Retrieval</td>
-  <td>API keys, eScience Center download package, running your first bulk download</td>
+  <td class="time-col">10:00 – 10:15</td>
+  <td><strong>Welcome and setup</strong></td>
+  <td>Introductions, environment check, plan for the day</td>
 </tr>
 <tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Module 2</strong>: PDF to Text</td>
-  <td>Tool tour (PyMuPDF, pdfminer, GROBID), extraction, basic cleaning</td>
+  <td class="time-col">10:15 – 11:00</td>
+  <td><strong>Bulk paper retrieval</strong></td>
+  <td>Talk: finding and downloading papers at scale</td>
 </tr>
 <tr class="break-row">
-  <td class="time-col">[FILL]</td>
-  <td colspan="2">☕ Coffee Break</td>
+  <td class="time-col">11:00 – 11:15</td>
+  <td colspan="2">Coffee break</td>
 </tr>
 <tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Module 3</strong>: Sentence Extraction</td>
-  <td>Sentence segmentation with spaCy, preprocessing for model input</td>
-</tr>
-<tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Module 4</strong>: HuggingFace Intro</td>
-  <td>Navigating the Hub, model cards, sentence vs. token models, pipeline API</td>
+  <td class="time-col">11:15 – 12:00</td>
+  <td><strong>Bulk paper retrieval</strong>: hands-on</td>
+  <td>Build a corpus from a search query of your own</td>
 </tr>
 <tr class="break-row">
-  <td class="time-col">[FILL]</td>
-  <td colspan="2">🍽️ Lunch Break</td>
+  <td class="time-col">12:00 – 13:00</td>
+  <td colspan="2">Lunch</td>
 </tr>
 <tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Module 5</strong>: Causal Extraction and Knowledge Graph</td>
-  <td>SocioCausaNet inference, harmonizing constructs, graph construction, querying the nomological map</td>
+  <td class="time-col">13:00 – 14:15</td>
+  <td><strong>From PDFs to causal claims</strong></td>
+  <td>Cleaning paper text into sentences, then extracting cause and effect</td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">14:15 – 14:30</td>
+  <td colspan="2">Coffee break</td>
 </tr>
 <tr>
-  <td class="time-col">[FILL]</td>
-  <td><strong>Wrap-up and Q&A</strong></td>
-  <td>Open questions, next steps, how to apply this to your own research</td>
+  <td class="time-col">14:30 – 15:45</td>
+  <td><strong>Harmonizing constructs and building the map</strong></td>
+  <td>Grouping constructs that mean the same thing, then assembling the causal map</td>
+</tr>
+<tr>
+  <td class="time-col">15:45 – 16:00</td>
+  <td><strong>Wrap-up and questions</strong></td>
+  <td>Open questions and how to apply this to your own research</td>
 </tr>
 </tbody>
 </table>
 
-## Module Details
+## What We Cover
 
-### Module 1: Bulk Paper Retrieval via API
+### Morning: building a corpus
 
-**What you'll have:** A working API setup and a folder of downloaded papers with metadata.
+*Netherlands eScience Center*
 
-- Setting up API keys and configuring your environment
-- Introduction to the eScience Center bulk download package
-- Exploring features: search filters, metadata retrieval, download options
-- Running your first bulk download and organizing the output
+A talk followed by a hands-on session on getting the papers in the first place. How bulk
+retrieval works, what the eScience Center download package does, and how to get from a
+search query to a folder of papers and metadata on your own machine.
 
-```python
-from paper_downloader import download_papers
+By the end of the morning you have your own corpus on a topic you choose.
 
-results = download_papers(
-    query="workplace stress wellbeing",
-    max_results=50,
-    output_dir="./papers"
-)
-```
+### Afternoon: from papers to a causal map
 
----
+*Rasoul Norouzi, Tilburg University*
 
-### Module 2: PDF to Text Conversion
+The rest of the pipeline, in four steps:
 
-**What you'll have:** Plain text files extracted from your PDFs, cleaned and ready for sentence segmentation.
+1. **PDF to sentences.** Extracting text from PDFs and cleaning it: dropping running
+   heads and page furniture, joining broken paragraphs, splitting into sentences,
+   stripping inline citations and statistics. We also look at what got thrown away and
+   why, because that is where most mistakes hide.
+2. **Sentences to causal claims.** Running SocioCausaNet over the sentences to find the
+   ones that state a cause and an effect, and to mark the two spans. Every relation keeps
+   the sentence, page and document it came from.
+3. **Harmonizing constructs.** The same construct is worded differently in every paper.
+   Three ways to deal with that: map the spans onto a published taxonomy such as ELSST
+   or the APA thesaurus, group them by similarity, or cluster them and name the clusters.
+   We compare what each route gives you and where each one breaks.
+4. **The causal map.** Assembling the harmonized pairs into a graph, looking at which
+   constructs connect the most, following causal chains, and tracing any edge back to the
+   sentence it came from.
 
-- Guided tour of PDF-to-text tools: PyMuPDF (fitz), pdfminer.six, pdfplumber, GROBID
-- What each tool handles well and where each one struggles
-- Running extraction on your downloaded corpus
-- Basic cleaning: removing headers, footers, reference sections, broken line breaks
+By the end of the day you have a causal map built from the papers you downloaded in the
+morning, and a pipeline you can run again on your own literature.
 
-```python
-import fitz  # PyMuPDF
+::: {.callout-note}
+## No generative AI
 
-def extract_text(pdf_path):
-    doc = fitz.open(pdf_path)
-    text = ""
-    for page in doc:
-        text += page.get_text()
-    return text
-```
-
----
-
-### Module 3: Sentence Extraction and Preprocessing
-
-**What you'll have:** A clean list of sentences extracted from your paper corpus, ready to feed into SocioCausaNet.
-
-- Why sentence segmentation matters for causal extraction
-- Using spaCy to split paper text into sentences reliably
-- Handling tricky cases: abbreviations, inline citations, broken sentences from PDF extraction
-- Light preprocessing: stripping noise, normalizing whitespace, filtering short/long sentences
-
-```python
-import spacy
-
-nlp = spacy.load("en_core_web_sm")
-
-def extract_sentences(text):
-    doc = nlp(text)
-    sentences = [
-        sent.text.strip()
-        for sent in doc.sents
-        if len(sent.text.strip()) > 30
-    ]
-    return sentences
-```
-
----
-
-### Module 4: Introduction to HuggingFace
-
-**What you'll have:** A working inference call on SocioCausaNet using the pipeline API.
-
-- Navigating the HuggingFace Hub: searching, filtering by task, reading model cards
-- What "text classification" and "token classification" mean in practice
-- Sentence-level models: what they produce and when they are useful
-- Token-level models: how they label text word by word
-- Using the pipeline API to run a model in a few lines of code
-
-```python
-from transformers import pipeline
-
-model = pipeline(
-    "text-classification",
-    model="rasoultilburg/SocioCausaNet"
-)
-
-sentence = "Increased workload leads to higher levels of burnout."
-result = model(sentence)
-print(result)
-```
-
----
-
-### Module 5: Causal Extraction and Knowledge Graph
-
-**What you'll have:** A visual causal knowledge graph built entirely from published scientific claims in your corpus.
-
-- Running rasoultilburg/SocioCausaNet on your sentence dataset
-- Understanding the BIO-tagged output: B-Cause/I-Cause, B-Effect/I-Effect spans
-- Harmonizing social science constructs: grouping synonymous terms into shared nodes
-- Building the knowledge graph: concepts as nodes, causal relations as directed edges
-- Adding provenance: linking each edge back to the source paper and sentence
-- Graphical presentation and visualization
-- Querying the graph: influential constructs, causal chains, research gaps
-
-```python
-from transformers import pipeline
-import networkx as nx
-
-model = pipeline(
-    "token-classification",
-    model="rasoultilburg/SocioCausaNet",
-    aggregation_strategy="simple"
-)
-
-def parse_bio_spans(entities):
-    """Extract cause and effect text spans from BIO-tagged entities."""
-    causes, effects = [], []
-    for ent in entities:
-        if "Cause" in ent["entity_group"]:
-            causes.append(ent["word"])
-        elif "Effect" in ent["entity_group"]:
-            effects.append(ent["word"])
-    return causes, effects
-
-G = nx.DiGraph()
-
-sentences = [
-    "Increased workload leads to higher levels of burnout.",
-    "Social support reduces workplace stress."
-]
-
-for sent in sentences:
-    entities = model(sent)
-    causes, effects = parse_bio_spans(entities)
-    for cause in causes:
-        for effect in effects:
-            G.add_edge(cause, effect, sentence=sent)
-
-# Query: what does 'workload' cause?
-print(list(G.successors("workload")))
-```
-
----
+Nothing in the pipeline is generated or paraphrased. Every relation in the final map
+points back to the exact sentence, page and paper it came from.
+:::
 
 ## Preparation Before the Workshop
 
-Please do the following **before arriving** so we can start on time:
+You can follow the workshop either on your own machine or in Google Colab. Choose one and
+have it working before you arrive, so we can start on time.
 
 ::: {.callout-important}
-## Required setup
+## Required setup: pick one
 
-1. Clone the workshop repository:
-   ```bash
-   git clone https://github.com/rasoultilburg/sociocausanet-workshop.git
-   ```
-2. Create a virtual environment and install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Make sure Jupyter or VS Code with the Jupyter extension is working on your machine.
+**On your own machine**
+
+- Install the latest version of Python from
+  [python.org/downloads](https://www.python.org/downloads/).
+- Have a working notebook environment: either
+  [Jupyter](https://jupyter.org/install), or
+  [VS Code](https://code.visualstudio.com/) with the
+  [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+  ([setup guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)).
+- Open a notebook and run a cell before the day, so you know it works.
+
+**In [Google Colab](https://colab.research.google.com/)**
+
+- Nothing to install. Make sure you have an active Google account you can sign in with on
+  the day ([create one](https://accounts.google.com/signup)).
+:::
+
+::: {.callout-note}
+## Workshop package: instructions coming shortly
+
+The workshop package is not ready to install yet. Setup instructions will be posted on
+this page in a few days. Please check back shortly before the workshop.
 :::
 
 ::: {.callout-tip}
 ## Optional but helpful
 
-- Create a free account at [huggingface.co](https://huggingface.co) so you can access models directly from the Hub during the workshop.
-- Skim the HuggingFace model card for [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet) so the model is not completely new to you on the day.
+- Create a free account at [huggingface.co](https://huggingface.co) so you can load models from the Hub during the workshop.
+- Skim the model card for [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet) so the model is not new to you on the day.
+:::
+
+::: {.callout-note}
+## If you cannot make it
+
+We assume everyone who registered will attend. If your plans change, please email
+[r.norouzinijeh@tilburguniversity.edu](mailto:r.norouzinijeh@tilburguniversity.edu) so we
+can adjust the catering numbers.
 :::
