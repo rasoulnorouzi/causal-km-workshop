@@ -38,39 +38,51 @@ Slides will be posted after the workshop in PDF format.
 
 For a complete overview of what each module covers, see the [full Schedule](schedule.qmd) page which includes the timing and a description of each part.
 
-## Requirements File
+## Installation
 
-Copy the block below into a `requirements.txt` file and run
-`pip install -r requirements.txt` to install everything you need.
+Two separate packages, one for each half of the day. Both need **Python 3.11 or newer**.
 
-```
-requests
-pandas
-tqdm
-PyMuPDF
-pdfminer.six
-pdfplumber
-spacy
-transformers
-sentence-transformers
-torch
-networkx
-pyvis
-matplotlib
-jupyter
-ipykernel
-```
-
-After installing, download the spaCy English model:
+**For downloading papers** (morning) —
+[tmsr-doi-downloader](https://pypi.org/project/tmsr-doi-downloader/), from the eScience
+Center:
 
 ```bash
-python -m spacy download en_core_web_sm
+pip install tmsr-doi-downloader
 ```
+
+**For the causal map** (afternoon) —
+[theoryminer](https://pypi.org/project/theoryminer/):
+
+```bash
+pip install theoryminer
+```
+
+In a notebook or Colab, put a `%` in front: `%pip install theoryminer`.
+
+### Run this once before you arrive
+
+So the models are cached on your machine, not downloaded on the conference network:
+
+```python
+from theoryminer import causenet
+causenet(["Increased workload leads to higher levels of burnout."])
+```
+
+### One key to set
+
+The downloader's Unpaywall source needs an email address, in a `.env` file in your working
+directory:
+
+```
+UNPAYWALL_EMAIL=your.email@example.com
+```
+
+No GPU needed. In Colab, Runtime → Change runtime type → T4 GPU is faster and free.
 
 ## Useful Links
 
+- [theoryminer on PyPI](https://pypi.org/project/theoryminer/) and its [repository](https://github.com/rasoulnorouzi/theoryminer)
+- [tmsr-doi-downloader on PyPI](https://pypi.org/project/tmsr-doi-downloader/) and its [documentation](https://escience-tmsr.github.io/doi-downloader/)
+- [SocioCausaNet on HuggingFace](https://huggingface.co/rasoultilburg/SocioCausaNet)
 - [HuggingFace Hub](https://huggingface.co)
-- [eScience Center download package](https://github.com/[FILL])
-- [spaCy documentation](https://spacy.io)
 - [NetworkX documentation](https://networkx.org)
-- [Workshop repository](https://github.com/rasoultilburg/sociocausanet-workshop)

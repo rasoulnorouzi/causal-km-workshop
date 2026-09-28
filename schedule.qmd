@@ -69,7 +69,7 @@ conference. Coffee is available on arrival, and there is a break in each half of
 
 ### Morning: building a corpus
 
-*Netherlands eScience Center*
+*Erik Tjong Kim Sang, Netherlands eScience Center*
 
 A talk followed by a hands-on session on getting the papers in the first place. How bulk
 retrieval works, what the eScience Center download package does, and how to get from a
@@ -118,26 +118,45 @@ have it working before you arrive, so we can start on time.
 
 **On your own machine**
 
-- Install the latest version of Python from
-  [python.org/downloads](https://www.python.org/downloads/).
+- Install [Python 3.11 or newer](https://www.python.org/downloads/).
 - Have a working notebook environment: either
   [Jupyter](https://jupyter.org/install), or
   [VS Code](https://code.visualstudio.com/) with the
   [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
   ([setup guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)).
+- Install the two workshop packages:
+  ```bash
+  pip install tmsr-doi-downloader
+  pip install theoryminer
+  ```
 - Open a notebook and run a cell before the day, so you know it works.
 
 **In [Google Colab](https://colab.research.google.com/)**
 
 - Nothing to install. Make sure you have an active Google account you can sign in with on
   the day ([create one](https://accounts.google.com/signup)).
+- The installs go in your first cell, with a `%` in front of `pip`.
 :::
 
 ::: {.callout-note}
-## Workshop package: instructions coming shortly
+## Two packages, installed separately
 
-The workshop package is not ready to install yet. Setup instructions will be posted on
-this page in a few days. Please check back shortly before the workshop.
+[tmsr-doi-downloader](https://pypi.org/project/tmsr-doi-downloader/) for downloading papers
+in the morning, and [theoryminer](https://pypi.org/project/theoryminer/) for the causal map
+in the afternoon. Full instructions are on the [Materials](materials.qmd) page.
+:::
+
+::: {.callout-warning}
+## Please download the models at home
+
+The first run pulls SocioCausaNet and a sentence-transformer from the HuggingFace Hub. That
+is a large download, and thirty-odd people doing it at once on the conference network will
+not go well. Run this once before you travel:
+
+```python
+from theoryminer import causenet
+causenet(["Increased workload leads to higher levels of burnout."])
+```
 :::
 
 ::: {.callout-tip}
@@ -151,6 +170,6 @@ this page in a few days. Please check back shortly before the workshop.
 ## If you cannot make it
 
 We assume everyone who registered will attend. If your plans change, please email
-[r.norouzinijeh@tilburguniversity.edu](mailto:r.norouzinijeh@tilburguniversity.edu) so we
+[R.NorouziNikjeh@tilburguniversity.edu](mailto:R.NorouziNikjeh@tilburguniversity.edu) so we
 can adjust the catering numbers.
 :::

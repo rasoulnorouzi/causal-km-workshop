@@ -3,12 +3,13 @@ title: "About This Workshop"
 toc: false
 ---
 
-## Instructor
+## Instructors
+
+### Rasoul Norouzi
 
 ![Rasoul Norouzi](assets/rass_profile.jpg){width="200px" style="border-radius: 50%; float: right; margin-left: 1.5rem; margin-bottom: 1rem;"}
 
-**Rasoul Norouzi**
-Department of Methodology and Statistics, Tilburg University
+*Department of Methodology and Statistics, Tilburg University*
 
 Rasoul Norouzi is a PhD candidate in social science at Tilburg University. His research uses natural language processing to support theory development and refinement in the social sciences. He works on language models for causal information extraction from scientific text, graph-based methods for analyzing causal claims, and text mining to support transparent and reproducible research synthesis.
 He developed SocioCausaNet, the multitask model at the heart of this workshop. He is affiliated with the Insight Lab, the CPCM Lab, and the Meta-Research Lab at Tilburg University. 
@@ -17,11 +18,30 @@ Prior to his PhD, Rasoul earned an M.Sc. by Research in Information Technology f
 
 When he is not training models, he is usually building small tools to make research life a bit less painful, and putting them on GitHub for whoever needs them.
 
-[r.norouzi@tilburguniversity.edu](mailto:r.norouzi@tilburguniversity.edu)
+[R.NorouziNikjeh@tilburguniversity.edu](mailto:R.NorouziNikjeh@tilburguniversity.edu)
 [rasoulnorouzi.github.io](https://rasoulnorouzi.github.io)
 [GitHub](https://github.com/rasoulnorouzi)
 [Google Scholar](https://scholar.google.com/citations?user=syJhsDMAAAAJ)
 [ORCID 0000-0002-4447-764X](https://orcid.org/0000-0002-4447-764X)
+
+### Erik Tjong Kim Sang
+
+![Erik Tjong Kim Sang](assets/erik_profile.jpeg){width="200px" style="border-radius: 50%; float: right; margin-left: 1.5rem; margin-bottom: 1rem;"}
+
+*Senior Research Software Engineer, Netherlands eScience Center*
+
+Erik studied Electrical Engineering at the University of Delft and obtained a PhD in
+computational linguistics at the University of Groningen. Next, he worked as a postdoc and
+teacher at the universities of Uppsala (Sweden), Antwerp (Belgium), Tilburg, Amsterdam and
+Groningen. After a postdoc position at the Meertens Institute in Amsterdam, he joined the
+Netherlands eScience Center as a Senior Research Software Engineer in 2017.
+
+Erik has worked on a variety of computational linguistics topics, for example orthographic
+modeling, syntactic analysis, semantic analysis, named entity recognition, machine
+translation, summarization, question answering, dialect modeling and analysis of social
+media text. In his work, he has frequently used machine learning techniques.
+
+He leads the morning session on bulk paper retrieval.
 
 ---
 
@@ -33,7 +53,7 @@ When he is not training models, he is usually building small tools to make resea
 
 The eScience Center is the Dutch national center for the development and
 application of research software. They developed the bulk paper download
-package used in Module 1 of this workshop.
+package used in the morning session of this workshop.
 
 [https://www.esciencecenter.nl](https://www.esciencecenter.nl)
 
