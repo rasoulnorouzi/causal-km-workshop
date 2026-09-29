@@ -169,9 +169,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul class="collapse">
   <li><a href="#notebooks" id="toc-notebooks" class="nav-link active" data-scroll-target="#notebooks">Notebooks</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#data-and-model" id="toc-data-and-model" class="nav-link" data-scroll-target="#data-and-model">Data and Model</a></li>
-  <li><a href="#module-overview" id="toc-module-overview" class="nav-link" data-scroll-target="#module-overview">Module Overview</a></li>
   <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
   <li><a href="#useful-links" id="toc-useful-links" class="nav-link" data-scroll-target="#useful-links">Useful Links</a></li>
   </ul>
@@ -204,53 +201,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The workshop notebook, ready to run in Colab:</p>
 <p><a href="https://colab.research.google.com/drive/1vA2f-xUFraQ2zemvNmVe3jslkZlpNzr7?usp=sharing">Open the workshop notebook</a></p>
 <p>Use File → Save a copy in Drive to get your own editable copy.</p>
-<p>To run it on your own machine instead, <a href="assets/theorymethod_workshop_notebook.ipynb">download the notebook</a> (4 MB).</p>
-</section>
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p>Slides will be posted after the workshop in PDF format.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Module</th>
-<th>Slides</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1: Bulk paper retrieval</td>
-<td>[FILL:add link after workshop]</td>
-</tr>
-<tr class="even">
-<td>2: PDF to sentences</td>
-<td>[FILL:add link after workshop]</td>
-</tr>
-<tr class="odd">
-<td>3: Causal claims</td>
-<td>[FILL:add link after workshop]</td>
-</tr>
-<tr class="even">
-<td>4: Harmonizing constructs</td>
-<td>[FILL:add link after workshop]</td>
-</tr>
-<tr class="odd">
-<td>5: The causal map</td>
-<td>[FILL:add link after workshop]</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="data-and-model" class="level2">
-<h2 class="anchored" data-anchor-id="data-and-model">Data and Model</h2>
-<ul>
-<li><strong>SocioCausaNet on HuggingFace:</strong> <a href="https://huggingface.co/rasoultilburg/SocioCausaNet">rasoultilburg/SocioCausaNet</a></li>
-<li><strong>Sample paper corpus:</strong> [FILL:add link after workshop]</li>
-<li><strong>Example output graph:</strong> [FILL:add link after workshop]</li>
-</ul>
-</section>
-<section id="module-overview" class="level2">
-<h2 class="anchored" data-anchor-id="module-overview">Module Overview</h2>
-<p>For a complete overview of what each module covers, see the <a href="./schedule.html">full Schedule</a> page which includes the timing and a description of each part.</p>
+<p>To run it on your own machine instead:</p>
+<ol type="1">
+<li><a href="assets/theorymethod_workshop_notebook.ipynb" download="">Download the notebook</a> (4 MB).</li>
+<li>Make a folder for the workshop and put the notebook in it.</li>
+<li>Open that folder in VS Code or Jupyter, then open the notebook.</li>
+</ol>
+<p>Work from that folder for the rest of the day. The papers you download and the files the pipeline writes all land there.</p>
 </section>
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
@@ -260,12 +217,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>For the causal map</strong> (afternoon) — <a href="https://pypi.org/project/theoryminer/">theoryminer</a>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install theoryminer</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>In a notebook or Colab, put a <code>%</code> in front: <code>%pip install theoryminer</code>.</p>
-<section id="run-this-once-before-you-arrive" class="level3">
-<h3 class="anchored" data-anchor-id="run-this-once-before-you-arrive">Run this once before you arrive</h3>
-<p>So the models are cached on your machine, not downloaded on the conference network:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> theoryminer <span class="im">import</span> causenet</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>causenet([<span class="st">"Increased workload leads to higher levels of burnout."</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
 <section id="one-key-to-set" class="level3">
 <h3 class="anchored" data-anchor-id="one-key-to-set">One key to set</h3>
 <p>The downloader’s Unpaywall source needs an email address, in a <code>.env</code> file in your working directory:</p>

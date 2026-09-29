@@ -110,53 +110,27 @@ points back to the exact sentence, page and paper it came from.
 
 ## Preparation Before the Workshop
 
-You can follow the workshop either on your own machine or in Google Colab. Choose one and
-have it working before you arrive, so we can start on time.
+You can work on your own machine or in Google Colab. Either is fine.
 
 ::: {.callout-important}
 ## Required setup: pick one
 
 **On your own machine**
 
-- Install [Python 3.11 or newer](https://www.python.org/downloads/).
-- Have a working notebook environment: either
-  [Jupyter](https://jupyter.org/install), or
+- [Python 3.11 or newer](https://www.python.org/downloads/).
+- A working notebook environment: either [Jupyter](https://jupyter.org/install), or
   [VS Code](https://code.visualstudio.com/) with the
   [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
   ([setup guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)).
-- Install the two workshop packages:
-  ```bash
-  pip install tmsr-doi-downloader
-  pip install theoryminer
-  ```
-- Open a notebook and run a cell before the day, so you know it works.
+- Open a notebook and run a cell beforehand, so you know it works.
+- Then install the two packages and download the notebook: the
+  [Materials](materials.qmd) page has the commands.
 
 **In [Google Colab](https://colab.research.google.com/)**
 
-- Nothing to install. Make sure you have an active Google account you can sign in with on
-  the day ([create one](https://accounts.google.com/signup)).
-- The installs go in your first cell, with a `%` in front of `pip`.
-:::
-
-::: {.callout-note}
-## Two packages, installed separately
-
-[tmsr-doi-downloader](https://pypi.org/project/tmsr-doi-downloader/) for downloading papers
-in the morning, and [theoryminer](https://pypi.org/project/theoryminer/) for the causal map
-in the afternoon. Full instructions are on the [Materials](materials.qmd) page.
-:::
-
-::: {.callout-warning}
-## Please download the models at home
-
-The first run pulls SocioCausaNet and a sentence-transformer from the HuggingFace Hub. That
-is a large download, and thirty-odd people doing it at once on the conference network will
-not go well. Run this once before you travel:
-
-```python
-from theoryminer import causenet
-causenet(["Increased workload leads to higher levels of burnout."])
-```
+- Nothing to install. You need a Google account you can sign in with on the day
+  ([create one](https://accounts.google.com/signup)).
+- Open the notebook from the [Materials](materials.qmd) page and save your own copy.
 :::
 
 ::: {.callout-tip}

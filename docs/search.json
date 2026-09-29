@@ -60,21 +60,21 @@
     "href": "schedule.html#preparation-before-the-workshop",
     "title": "Workshop Schedule",
     "section": "Preparation Before the Workshop",
-    "text": "Preparation Before the Workshop\nYou can follow the workshop either on your own machine or in Google Colab. Choose one and have it working before you arrive, so we can start on time.\n\n\n\n\n\n\nImportantRequired setup: pick one\n\n\n\nOn your own machine\n\nInstall Python 3.11 or newer.\nHave a working notebook environment: either Jupyter, or VS Code with the Jupyter extension (setup guide).\nInstall the two workshop packages:\npip install tmsr-doi-downloader\npip install theoryminer\nOpen a notebook and run a cell before the day, so you know it works.\n\nIn Google Colab\n\nNothing to install. Make sure you have an active Google account you can sign in with on the day (create one).\nThe installs go in your first cell, with a % in front of pip.\n\n\n\n\n\n\n\n\n\nNoteTwo packages, installed separately\n\n\n\ntmsr-doi-downloader for downloading papers in the morning, and theoryminer for the causal map in the afternoon. Full instructions are on the Materials page.\n\n\n\n\n\n\n\n\nWarningPlease download the models at home\n\n\n\nThe first run pulls SocioCausaNet and a sentence-transformer from the HuggingFace Hub. That is a large download, and thirty-odd people doing it at once on the conference network will not go well. Run this once before you travel:\nfrom theoryminer import causenet\ncausenet([\"Increased workload leads to higher levels of burnout.\"])\n\n\n\n\n\n\n\n\nTipOptional but helpful\n\n\n\n\nCreate a free account at huggingface.co so you can load models from the Hub during the workshop.\nSkim the model card for rasoultilburg/SocioCausaNet so the model is not new to you on the day.\n\n\n\n\n\n\n\n\n\nNoteIf you cannot make it\n\n\n\nWe assume everyone who registered will attend. If your plans change, please email R.NorouziNikjeh@tilburguniversity.edu so we can adjust the catering numbers."
+    "text": "Preparation Before the Workshop\nYou can work on your own machine or in Google Colab. Either is fine.\n\n\n\n\n\n\nImportantRequired setup: pick one\n\n\n\nOn your own machine\n\nPython 3.11 or newer.\nA working notebook environment: either Jupyter, or VS Code with the Jupyter extension (setup guide).\nOpen a notebook and run a cell beforehand, so you know it works.\nThen install the two packages and download the notebook: the Materials page has the commands.\n\nIn Google Colab\n\nNothing to install. You need a Google account you can sign in with on the day (create one).\nOpen the notebook from the Materials page and save your own copy.\n\n\n\n\n\n\n\n\n\nTipOptional but helpful\n\n\n\n\nCreate a free account at huggingface.co so you can load models from the Hub during the workshop.\nSkim the model card for rasoultilburg/SocioCausaNet so the model is not new to you on the day.\n\n\n\n\n\n\n\n\n\nNoteIf you cannot make it\n\n\n\nWe assume everyone who registered will attend. If your plans change, please email R.NorouziNikjeh@tilburguniversity.edu so we can adjust the catering numbers."
   },
   {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Workshop Materials",
     "section": "",
-    "text": "The workshop notebook, ready to run in Colab:\nOpen the workshop notebook\nUse File → Save a copy in Drive to get your own editable copy.\nTo run it on your own machine instead, download the notebook (4 MB)."
+    "text": "The workshop notebook, ready to run in Colab:\nOpen the workshop notebook\nUse File → Save a copy in Drive to get your own editable copy.\nTo run it on your own machine instead:\n\nDownload the notebook (4 MB).\nMake a folder for the workshop and put the notebook in it.\nOpen that folder in VS Code or Jupyter, then open the notebook.\n\nWork from that folder for the rest of the day. The papers you download and the files the pipeline writes all land there."
   },
   {
     "objectID": "materials.html#notebooks",
     "href": "materials.html#notebooks",
     "title": "Workshop Materials",
     "section": "",
-    "text": "The workshop notebook, ready to run in Colab:\nOpen the workshop notebook\nUse File → Save a copy in Drive to get your own editable copy.\nTo run it on your own machine instead, download the notebook (4 MB)."
+    "text": "The workshop notebook, ready to run in Colab:\nOpen the workshop notebook\nUse File → Save a copy in Drive to get your own editable copy.\nTo run it on your own machine instead:\n\nDownload the notebook (4 MB).\nMake a folder for the workshop and put the notebook in it.\nOpen that folder in VS Code or Jupyter, then open the notebook.\n\nWork from that folder for the rest of the day. The papers you download and the files the pipeline writes all land there."
   },
   {
     "objectID": "materials.html#slides",
@@ -165,6 +165,6 @@
     "href": "materials.html#installation",
     "title": "Workshop Materials",
     "section": "Installation",
-    "text": "Installation\nTwo separate packages, one for each half of the day. Both need Python 3.11 or newer.\nFor downloading papers (morning) — tmsr-doi-downloader, from the eScience Center:\npip install tmsr-doi-downloader\nFor the causal map (afternoon) — theoryminer:\npip install theoryminer\nIn a notebook or Colab, put a % in front: %pip install theoryminer.\n\nRun this once before you arrive\nSo the models are cached on your machine, not downloaded on the conference network:\nfrom theoryminer import causenet\ncausenet([\"Increased workload leads to higher levels of burnout.\"])\n\n\nOne key to set\nThe downloader’s Unpaywall source needs an email address, in a .env file in your working directory:\nUNPAYWALL_EMAIL=your.email@example.com\nNo GPU needed. In Colab, Runtime → Change runtime type → T4 GPU is faster and free."
+    "text": "Installation\nTwo separate packages, one for each half of the day. Both need Python 3.11 or newer.\nFor downloading papers (morning) — tmsr-doi-downloader, from the eScience Center:\npip install tmsr-doi-downloader\nFor the causal map (afternoon) — theoryminer:\npip install theoryminer\nIn a notebook or Colab, put a % in front: %pip install theoryminer.\n\nOne key to set\nThe downloader’s Unpaywall source needs an email address, in a .env file in your working directory:\nUNPAYWALL_EMAIL=your.email@example.com\nNo GPU needed. In Colab, Runtime → Change runtime type → T4 GPU is faster and free."
   }
 ]

@@ -11,31 +11,14 @@ The workshop notebook, ready to run in Colab:
 
 Use File → Save a copy in Drive to get your own editable copy.
 
-To run it on your own machine instead,
-[download the notebook](assets/theorymethod_workshop_notebook.ipynb) (4 MB).
+To run it on your own machine instead:
 
-## Slides
+1. <a href="assets/theorymethod_workshop_notebook.ipynb" download>Download the notebook</a> (4 MB).
+2. Make a folder for the workshop and put the notebook in it.
+3. Open that folder in VS Code or Jupyter, then open the notebook.
 
-Slides will be posted after the workshop in PDF format.
-
-| Module | Slides |
-|--------|--------|
-| 1: Bulk paper retrieval | [FILL:add link after workshop] |
-| 2: PDF to sentences | [FILL:add link after workshop] |
-| 3: Causal claims | [FILL:add link after workshop] |
-| 4: Harmonizing constructs | [FILL:add link after workshop] |
-| 5: The causal map | [FILL:add link after workshop] |
-
-## Data and Model
-
-- **SocioCausaNet on HuggingFace:**
-  [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet)
-- **Sample paper corpus:** [FILL:add link after workshop]
-- **Example output graph:** [FILL:add link after workshop]
-
-## Module Overview
-
-For a complete overview of what each module covers, see the [full Schedule](schedule.qmd) page which includes the timing and a description of each part.
+Work from that folder for the rest of the day. The papers you download and the
+files the pipeline writes all land there.
 
 ## Installation
 
@@ -57,15 +40,6 @@ pip install theoryminer
 ```
 
 In a notebook or Colab, put a `%` in front: `%pip install theoryminer`.
-
-### Run this once before you arrive
-
-So the models are cached on your machine, not downloaded on the conference network:
-
-```python
-from theoryminer import causenet
-causenet(["Increased workload leads to higher levels of burnout."])
-```
 
 ### One key to set
 
