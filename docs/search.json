@@ -67,14 +67,14 @@
     "href": "materials.html",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.\n\n\n\nModule\nTopic\nStatus\n\n\n\n\n1\nBulk paper retrieval\n[FILL:add link after workshop]\n\n\n2\nPDF to sentences\n[FILL:add link after workshop]\n\n\n3\nCausal claims\n[FILL:add link after workshop]\n\n\n4\nHarmonizing constructs\n[FILL:add link after workshop]\n\n\n5\nThe causal map\n[FILL:add link after workshop]"
+    "text": "The workshop notebook, ready to run in Colab:\nOpen the workshop notebook\nUse File → Save a copy in Drive to get your own editable copy.\nTo run it on your own machine instead, download the notebook (4 MB)."
   },
   {
     "objectID": "materials.html#notebooks",
     "href": "materials.html#notebooks",
     "title": "Workshop Materials",
     "section": "",
-    "text": "Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.\n\n\n\nModule\nTopic\nStatus\n\n\n\n\n1\nBulk paper retrieval\n[FILL:add link after workshop]\n\n\n2\nPDF to sentences\n[FILL:add link after workshop]\n\n\n3\nCausal claims\n[FILL:add link after workshop]\n\n\n4\nHarmonizing constructs\n[FILL:add link after workshop]\n\n\n5\nThe causal map\n[FILL:add link after workshop]"
+    "text": "The workshop notebook, ready to run in Colab:\nOpen the workshop notebook\nUse File → Save a copy in Drive to get your own editable copy.\nTo run it on your own machine instead, download the notebook (4 MB)."
   },
   {
     "objectID": "materials.html#slides",

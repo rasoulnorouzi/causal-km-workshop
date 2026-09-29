@@ -5,15 +5,14 @@ toc: true
 
 ## Notebooks
 
-Each module has a corresponding Jupyter notebook. Starter notebooks with empty code cells will be available before the workshop so you can follow along. Completed versions will be posted after the workshop.
+The workshop notebook, ready to run in Colab:
 
-| Module | Topic | Status |
-|--------|-------|--------|
-| 1 | Bulk paper retrieval | [FILL:add link after workshop] |
-| 2 | PDF to sentences | [FILL:add link after workshop] |
-| 3 | Causal claims | [FILL:add link after workshop] |
-| 4 | Harmonizing constructs | [FILL:add link after workshop] |
-| 5 | The causal map | [FILL:add link after workshop] |
+[Open the workshop notebook](https://colab.research.google.com/drive/1vA2f-xUFraQ2zemvNmVe3jslkZlpNzr7?usp=sharing)
+
+Use File → Save a copy in Drive to get your own editable copy.
+
+To run it on your own machine instead,
+[download the notebook](assets/theorymethod_workshop_notebook.ipynb) (4 MB).
 
 ## Slides
 
