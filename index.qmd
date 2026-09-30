@@ -20,7 +20,7 @@ September 30, 2026
 Tilburg, Netherlands
 :::
 ::: {.meta-item}
-Tilburg University
+Tilburg University, Koopmans Building, room K1201
 :::
 ::: {.meta-item}
 10:00 – 16:00
@@ -84,6 +84,13 @@ edge back to the sentence it came from.</p>
 :::
 
 See the [Schedule](schedule.qmd) for the timing and a fuller description of each part.
+
+## Location
+
+**Koopmans Building, room K1201, 12th floor**<br>
+Tilburg University, Warandelaan 2, 5037 AB Tilburg, Netherlands
+
+[Open in Google Maps](https://www.google.com/maps/search/?api=1&query=Koopmans+Building+Warandelaan+2+5037+AB+Tilburg)
 
 ## Who Should Come
 
