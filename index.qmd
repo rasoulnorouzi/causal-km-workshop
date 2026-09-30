@@ -23,6 +23,9 @@ Tilburg, Netherlands
 Tilburg University
 :::
 ::: {.meta-item}
+Koopmans Building, room K1201, 12th floor<br>Warandelaan 2, 5037 AB Tilburg
+:::
+::: {.meta-item}
 10:00 – 16:00
 :::
 :::
