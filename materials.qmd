@@ -1,7 +1,15 @@
 ---
 title: "Workshop Materials"
+pagetitle: "Workshop Materials | Text Mining Systematic Reviews"
 toc: true
 ---
+
+## Slides
+
+The slides from the day, as a single HTML file that opens in any web browser:
+
+- <a href="assets/Causal%20Knowledge%20Mapping%20Workshop.html" target="_blank" rel="noopener">View the slides</a>
+- <a href="assets/Causal%20Knowledge%20Mapping%20Workshop.html" download="Causal Knowledge Mapping Workshop.html">Download the slides</a> (2.2 MB)
 
 ## Notebooks
 
@@ -17,14 +25,14 @@ To run it on your own machine instead:
 2. Make a folder for the workshop and put the notebook in it.
 3. Open that folder in VS Code or Jupyter, then open the notebook.
 
-Work from that folder for the rest of the day. The papers you download and the
-files the pipeline writes all land there.
+Work from that folder throughout. The papers you download and the files the
+pipeline writes all land there.
 
 ## Installation
 
 Two separate packages, one for each half of the day. Both need **Python 3.11 or newer**.
 
-**For downloading papers** (morning) —
+**For downloading papers** (morning):
 [tmsr-doi-downloader](https://pypi.org/project/tmsr-doi-downloader/), from the eScience
 Center:
 
@@ -32,7 +40,7 @@ Center:
 pip install tmsr-doi-downloader
 ```
 
-**For the causal map** (afternoon) —
+**For the causal map** (afternoon):
 [theoryminer](https://pypi.org/project/theoryminer/):
 
 ```bash

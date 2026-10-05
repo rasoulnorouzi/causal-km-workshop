@@ -1,11 +1,12 @@
 ---
 title: "Workshop Schedule"
-subtitle: "September 30, 2026 · Tilburg University"
+pagetitle: "Workshop Schedule | Text Mining Systematic Reviews"
+subtitle: "Held September 30, 2026 · Tilburg University"
 toc: true
 ---
 
-The workshop runs from 10:00 to 16:00, following the same day rhythm as the main
-conference. Coffee is available on arrival, and there is a break in each half of the day.
+The workshop ran from 10:00 to 16:00, following the same day rhythm as the main
+conference, with a break in each half of the day. The programme as it ran:
 
 <table class="schedule-table">
 <thead>
@@ -17,48 +18,48 @@ conference. Coffee is available on arrival, and there is a break in each half of
 </thead>
 <tbody>
 <tr class="break-row">
-  <td class="time-col">09:45 – 10:00</td>
+  <td class="time-col">09:45-10:00</td>
   <td colspan="2">Arrival and coffee</td>
 </tr>
 <tr>
-  <td class="time-col">10:00 – 10:15</td>
+  <td class="time-col">10:00-10:15</td>
   <td><strong>Welcome and setup</strong></td>
   <td>Introductions, environment check, plan for the day</td>
 </tr>
 <tr>
-  <td class="time-col">10:15 – 11:00</td>
+  <td class="time-col">10:15-11:00</td>
   <td><strong>Bulk paper retrieval</strong></td>
   <td>Talk: finding and downloading papers at scale</td>
 </tr>
 <tr class="break-row">
-  <td class="time-col">11:00 – 11:15</td>
+  <td class="time-col">11:00-11:15</td>
   <td colspan="2">Coffee break</td>
 </tr>
 <tr>
-  <td class="time-col">11:15 – 12:00</td>
+  <td class="time-col">11:15-12:00</td>
   <td><strong>Bulk paper retrieval</strong>: hands-on</td>
   <td>Build a corpus from a search query of your own</td>
 </tr>
 <tr class="break-row">
-  <td class="time-col">12:00 – 13:00</td>
+  <td class="time-col">12:00-13:00</td>
   <td colspan="2">Lunch</td>
 </tr>
 <tr>
-  <td class="time-col">13:00 – 14:15</td>
+  <td class="time-col">13:00-14:15</td>
   <td><strong>From PDFs to causal claims</strong></td>
   <td>Cleaning paper text into sentences, then extracting cause and effect</td>
 </tr>
 <tr class="break-row">
-  <td class="time-col">14:15 – 14:30</td>
+  <td class="time-col">14:15-14:30</td>
   <td colspan="2">Coffee break</td>
 </tr>
 <tr>
-  <td class="time-col">14:30 – 15:45</td>
+  <td class="time-col">14:30-15:45</td>
   <td><strong>Harmonizing constructs and building the map</strong></td>
   <td>Grouping constructs that mean the same thing, then assembling the causal map</td>
 </tr>
 <tr>
-  <td class="time-col">15:45 – 16:00</td>
+  <td class="time-col">15:45-16:00</td>
   <td><strong>Wrap-up and questions</strong></td>
   <td>Open questions and how to apply this to your own research</td>
 </tr>
@@ -101,6 +102,9 @@ The rest of the pipeline, in four steps:
 By the end of the day you have a causal map built from the papers you downloaded in the
 morning, and a pipeline you can run again on your own literature.
 
+The [slides and the notebook](materials.qmd) cover both halves, so you can follow the
+same steps on your own.
+
 ::: {.callout-note}
 ## No generative AI
 
@@ -108,12 +112,12 @@ Nothing in the pipeline is generated or paraphrased. Every relation in the final
 points back to the exact sentence, page and paper it came from.
 :::
 
-## Preparation Before the Workshop
+## Working Through It on Your Own
 
 You can work on your own machine or in Google Colab. Either is fine.
 
 ::: {.callout-important}
-## Required setup: pick one
+## Setup: pick one
 
 **On your own machine**
 
@@ -122,13 +126,13 @@ You can work on your own machine or in Google Colab. Either is fine.
   [VS Code](https://code.visualstudio.com/) with the
   [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
   ([setup guide](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)).
-- Open a notebook and run a cell beforehand, so you know it works.
+- Open a notebook and run a cell first, so you know it works.
 - Then install the two packages and download the notebook: the
   [Materials](materials.qmd) page has the commands.
 
 **In [Google Colab](https://colab.research.google.com/)**
 
-- Nothing to install. You need a Google account you can sign in with on the day
+- Nothing to install. You need a Google account
   ([create one](https://accounts.google.com/signup)).
 - Open the notebook from the [Materials](materials.qmd) page and save your own copy.
 :::
@@ -136,14 +140,12 @@ You can work on your own machine or in Google Colab. Either is fine.
 ::: {.callout-tip}
 ## Optional but helpful
 
-- Create a free account at [huggingface.co](https://huggingface.co) so you can load models from the Hub during the workshop.
-- Skim the model card for [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet) so the model is not new to you on the day.
+- Create a free account at [huggingface.co](https://huggingface.co) so you can load models from the Hub.
+- Skim the model card for [rasoultilburg/SocioCausaNet](https://huggingface.co/rasoultilburg/SocioCausaNet) before you start.
 :::
 
 ::: {.callout-note}
-## If you cannot make it
+## Questions
 
-We assume everyone who registered will attend. If your plans change, please email
-[R.NorouziNikjeh@tilburguniversity.edu](mailto:R.NorouziNikjeh@tilburguniversity.edu) so we
-can adjust the catering numbers.
+Email [R.NorouziNikjeh@tilburguniversity.edu](mailto:R.NorouziNikjeh@tilburguniversity.edu).
 :::

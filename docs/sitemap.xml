@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rasoulnorouzi.github.io/causal-km-workshop/index.html</loc>
-    <lastmod>2026-09-08T12:21:08.630Z</lastmod>
-  </url>
-  <url>
     <loc>https://rasoulnorouzi.github.io/causal-km-workshop/schedule.html</loc>
-    <lastmod>2026-09-29T23:07:24.991Z</lastmod>
+    <lastmod>2026-10-05T21:40:25.280Z</lastmod>
   </url>
   <url>
-    <loc>https://rasoulnorouzi.github.io/causal-km-workshop/materials.html</loc>
-    <lastmod>2026-09-29T23:12:01.680Z</lastmod>
+    <loc>https://rasoulnorouzi.github.io/causal-km-workshop/index.html</loc>
+    <lastmod>2026-10-05T21:38:42.953Z</lastmod>
   </url>
   <url>
     <loc>https://rasoulnorouzi.github.io/causal-km-workshop/about.html</loc>
-    <lastmod>2026-09-28T15:46:23.804Z</lastmod>
+    <lastmod>2026-10-05T21:40:25.618Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rasoulnorouzi.github.io/causal-km-workshop/materials.html</loc>
+    <lastmod>2026-10-05T21:40:25.450Z</lastmod>
   </url>
 </urlset>

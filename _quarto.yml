@@ -3,14 +3,23 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+  resources:
+    - "assets/Causal Knowledge Mapping Workshop.html"
 
 website:
   title: "Text Mining Systematic Reviews"
-  description: "A pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction. September 30, 2026 · Tilburg, Netherlands."
+  description: "Materials from a pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction, held September 30, 2026 in Tilburg, Netherlands."
   site-url: https://rasoulnorouzi.github.io/causal-km-workshop
   repo-url: https://github.com/rasoulnorouzi/causal-km-workshop
   repo-actions: [edit, issue]
   open-graph: true
+
+  announcement:
+    icon: archive
+    dismissable: false
+    type: info
+    position: below-navbar
+    content: "**Archive.** This workshop took place on September 30, 2026. The slides, notebook and setup instructions are on the [Materials](materials.html) page."
 
   navbar:
     background: "#1B3A6B"
@@ -54,3 +63,4 @@ format:
     code-copy: true
     code-overflow: wrap
     anchor-sections: true
+    title-prefix: ""

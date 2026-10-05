@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Workshop Materials – Text Mining Systematic Reviews</title>
+<title>Workshop Materials | Text Mining Systematic Reviews</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -67,15 +73,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bb62276ab45c84d9efd712f51ff97b5a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-40471c3da53007c7b4109b0ee53fafc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5591812996dd81bac7b113779afa4903.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,8 +111,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta property="og:title" content="Workshop Materials – Text Mining Systematic Reviews">
-<meta property="og:description" content="A pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction. September 30, 2026 · Tilburg, Netherlands.">
+<meta property="og:title" content="Workshop Materials | Text Mining Systematic Reviews">
+<meta property="og:description" content="Materials from a pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction, held September 30, 2026 in Tilburg, Netherlands.">
 <meta property="og:site_name" content="Text Mining Systematic Reviews">
 </head>
 
@@ -158,6 +163,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <div id="quarto-announcement" data-announcement-id="52195722a53f8c335741c6ee848b8935" class="alert alert-info hidden"><i class="bi bi-archive quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Archive.</strong> This workshop took place on September 30, 2026. The slides, notebook and setup instructions are on the <a href="materials.html">Materials</a> page.</p>
+</div></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -168,7 +176,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#notebooks" id="toc-notebooks" class="nav-link active" data-scroll-target="#notebooks">Notebooks</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#notebooks" id="toc-notebooks" class="nav-link" data-scroll-target="#notebooks">Notebooks</a></li>
   <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
   <li><a href="#useful-links" id="toc-useful-links" class="nav-link" data-scroll-target="#useful-links">Useful Links</a></li>
   </ul>
@@ -196,6 +205,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<p>The slides from the day, as a single HTML file that opens in any web browser:</p>
+<ul>
+<li><a href="assets/Causal Knowledge Mapping Workshop.html" target="_blank" rel="noopener">View the slides</a></li>
+<li><a href="assets/Causal Knowledge Mapping Workshop.html" download="Causal Knowledge Mapping Workshop.html">Download the slides</a> (2.2 MB)</li>
+</ul>
+</section>
 <section id="notebooks" class="level2">
 <h2 class="anchored" data-anchor-id="notebooks">Notebooks</h2>
 <p>The workshop notebook, ready to run in Colab:</p>
@@ -207,14 +224,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Make a folder for the workshop and put the notebook in it.</li>
 <li>Open that folder in VS Code or Jupyter, then open the notebook.</li>
 </ol>
-<p>Work from that folder for the rest of the day. The papers you download and the files the pipeline writes all land there.</p>
+<p>Work from that folder throughout. The papers you download and the files the pipeline writes all land there.</p>
 </section>
 <section id="installation" class="level2">
 <h2 class="anchored" data-anchor-id="installation">Installation</h2>
 <p>Two separate packages, one for each half of the day. Both need <strong>Python 3.11 or newer</strong>.</p>
-<p><strong>For downloading papers</strong> (morning) — <a href="https://pypi.org/project/tmsr-doi-downloader/">tmsr-doi-downloader</a>, from the eScience Center:</p>
+<p><strong>For downloading papers</strong> (morning): <a href="https://pypi.org/project/tmsr-doi-downloader/">tmsr-doi-downloader</a>, from the eScience Center:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install tmsr-doi-downloader</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>For the causal map</strong> (afternoon) — <a href="https://pypi.org/project/theoryminer/">theoryminer</a>:</p>
+<p><strong>For the causal map</strong> (afternoon): <a href="https://pypi.org/project/theoryminer/">theoryminer</a>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install theoryminer</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>In a notebook or Colab, put a <code>%</code> in front: <code>%pip install theoryminer</code>.</p>
 <section id="one-key-to-set" class="level3">

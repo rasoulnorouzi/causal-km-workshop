@@ -5,45 +5,44 @@ toc: false
 ---
 
 ::: {.hero-banner}
-Pre-Conference Workshop · September 30, 2026
+Pre-Conference Workshop · Archive
 
 # Text Mining Systematic Reviews
 
-Learn how to download scientific articles in bulk and analyze them
+How to download scientific articles in bulk and analyze them
 using an evidence-based, deterministic pipeline. No generative AI.
 
 ::: {.hero-meta}
 ::: {.meta-item}
-September 30, 2026
+Held September 30, 2026
 :::
 ::: {.meta-item}
-Tilburg, Netherlands
-:::
-::: {.meta-item}
-Tilburg University, Koopmans Building, room K1201
-:::
-::: {.meta-item}
-10:00 – 16:00
+Tilburg University, Netherlands
 :::
 :::
 
-[View Schedule](schedule.qmd){.btn-hero}
+[Slides and Notebook](materials.qmd){.btn-hero}
+[Schedule](schedule.qmd){.btn-hero}
 
 :::
 
 ## About This Workshop
 
-This workshop teaches you how to build a complete, transparent pipeline for
-extracting structured knowledge from published scientific papers. You will
-go from a search query all the way to a visual causal knowledge graph, using
+This workshop took place on September 30, 2026 at Tilburg University. The slides,
+the notebook and the setup instructions stay online, so you can work through the
+pipeline on your own.
+
+The workshop teaches you how to build a complete, transparent pipeline for
+extracting structured knowledge from published scientific papers. You go
+from a search query all the way to a visual causal knowledge graph, using
 only deterministic models, meaning every result is traceable back to an
 exact sentence in an exact paper.
 
-The workshop is built around a real tool: **rasoultilburg/SocioCausaNet**,
-a model specifically trained to detect causal claims in social science text
+The workshop is built around **rasoultilburg/SocioCausaNet**,
+a model trained to detect causal claims in social science text
 and extract the cause-effect pairs from them.
 
-## What You Will Learn
+## What the Workshop Covers
 
 ::: {.grid}
 
@@ -83,18 +82,11 @@ edge back to the sentence it came from.</p>
 
 :::
 
-See the [Schedule](schedule.qmd) for the timing and a fuller description of each part.
+See the [Schedule](schedule.qmd) for how the day ran and a fuller description of each part.
 
-## Location
+## Who It Is For
 
-**Koopmans Building, room K1201, 12th floor**<br>
-Tilburg University, Warandelaan 2, 5037 AB Tilburg, Netherlands
-
-[Open in Google Maps](https://www.google.com/maps/search/?api=1&query=Koopmans+Building+Warandelaan+2+5037+AB+Tilburg)
-
-## Who Should Come
-
-This workshop is for:
+The material is for:
 
 - Social science **PhD students** who want to make their literature reviews
   faster and more systematic

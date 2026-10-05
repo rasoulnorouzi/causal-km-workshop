@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Text Mining Systematic Reviews</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,15 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bb62276ab45c84d9efd712f51ff97b5a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-40471c3da53007c7b4109b0ee53fafc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5591812996dd81bac7b113779afa4903.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Text Mining Systematic Reviews">
-<meta property="og:description" content="A pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction. September 30, 2026 · Tilburg, Netherlands.">
+<meta property="og:description" content="Materials from a pre-conference workshop on bulk paper downloading and evidence-based causal knowledge extraction, held September 30, 2026 in Tilburg, Netherlands.">
 <meta property="og:image" content="https://rasoulnorouzi.github.io/causal-km-workshop/assets/tilburglogo.png">
 <meta property="og:site_name" content="Text Mining Systematic Reviews">
 <meta property="og:image:alt" content="Tilburg University">
@@ -127,6 +132,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <div id="quarto-announcement" data-announcement-id="52195722a53f8c335741c6ee848b8935" class="alert alert-info hidden"><i class="bi bi-archive quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Archive.</strong> This workshop took place on September 30, 2026. The slides, notebook and setup instructions are on the <a href="materials.html">Materials</a> page.</p>
+</div></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
@@ -156,34 +164,29 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="hero-banner">
-<p>Pre-Conference Workshop · September 30, 2026</p>
+<p>Pre-Conference Workshop · Archive</p>
 <section id="text-mining-systematic-reviews" class="level1">
 <h1>Text Mining Systematic Reviews</h1>
-<p>Learn how to download scientific articles in bulk and analyze them using an evidence-based, deterministic pipeline. No generative AI.</p>
+<p>How to download scientific articles in bulk and analyze them using an evidence-based, deterministic pipeline. No generative AI.</p>
 <div class="hero-meta">
 <div class="meta-item">
-<p>September 30, 2026</p>
+<p>Held September 30, 2026</p>
 </div>
 <div class="meta-item">
-<p>Tilburg, Netherlands</p>
-</div>
-<div class="meta-item">
-<p>Tilburg University, Koopmans Building, room K1201</p>
-</div>
-<div class="meta-item">
-<p>10:00 – 16:00</p>
+<p>Tilburg University, Netherlands</p>
 </div>
 </div>
-<p><a href="./schedule.html" class="btn-hero">View Schedule</a></p>
+<p><a href="./materials.html" class="btn-hero">Slides and Notebook</a> <a href="./schedule.html" class="btn-hero">Schedule</a></p>
 </section>
 </div>
 <section id="about-this-workshop" class="level2">
 <h2 class="anchored" data-anchor-id="about-this-workshop">About This Workshop</h2>
-<p>This workshop teaches you how to build a complete, transparent pipeline for extracting structured knowledge from published scientific papers. You will go from a search query all the way to a visual causal knowledge graph, using only deterministic models, meaning every result is traceable back to an exact sentence in an exact paper.</p>
-<p>The workshop is built around a real tool: <strong>rasoultilburg/SocioCausaNet</strong>, a model specifically trained to detect causal claims in social science text and extract the cause-effect pairs from them.</p>
+<p>This workshop took place on September 30, 2026 at Tilburg University. The slides, the notebook and the setup instructions stay online, so you can work through the pipeline on your own.</p>
+<p>The workshop teaches you how to build a complete, transparent pipeline for extracting structured knowledge from published scientific papers. You go from a search query all the way to a visual causal knowledge graph, using only deterministic models, meaning every result is traceable back to an exact sentence in an exact paper.</p>
+<p>The workshop is built around <strong>rasoultilburg/SocioCausaNet</strong>, a model trained to detect causal claims in social science text and extract the cause-effect pairs from them.</p>
 </section>
-<section id="what-you-will-learn" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-learn">What You Will Learn</h2>
+<section id="what-the-workshop-covers" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-workshop-covers">What the Workshop Covers</h2>
 <div class="grid">
 <div class="g-col-12 g-col-md-6">
 <div class="info-card">
@@ -230,17 +233,11 @@ Assemble the pairs into a graph, follow causal chains, and trace any edge back t
 </div>
 </div>
 </div>
-<p>See the <a href="./schedule.html">Schedule</a> for the timing and a fuller description of each part.</p>
+<p>See the <a href="./schedule.html">Schedule</a> for how the day ran and a fuller description of each part.</p>
 </section>
-<section id="location" class="level2">
-<h2 class="anchored" data-anchor-id="location">Location</h2>
-<p><strong>Koopmans Building, room K1201, 12th floor</strong><br>
-Tilburg University, Warandelaan 2, 5037 AB Tilburg, Netherlands</p>
-<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Koopmans+Building+Warandelaan+2+5037+AB+Tilburg">Open in Google Maps</a></p>
-</section>
-<section id="who-should-come" class="level2">
-<h2 class="anchored" data-anchor-id="who-should-come">Who Should Come</h2>
-<p>This workshop is for:</p>
+<section id="who-it-is-for" class="level2">
+<h2 class="anchored" data-anchor-id="who-it-is-for">Who It Is For</h2>
+<p>The material is for:</p>
 <ul>
 <li>Social science <strong>PhD students</strong> who want to make their literature reviews faster and more systematic</li>
 <li>Researchers interested in <strong>automating qualitative reviews</strong></li>
